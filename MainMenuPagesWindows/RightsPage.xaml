@@ -1,0 +1,101 @@
+﻿<Page x:Class="EkatBooks.RightsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EkatBooks.MainMenuPagesWindows"
+      xmlns:conv="clr-namespace:EkatBooks.Converters"
+      mc:Ignorable="d" 
+      
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RightsPage">
+
+    <Page.Resources>
+        <conv:ImageAuthorPathConverter x:Key="ImageAuthorPathConverter" />
+    </Page.Resources>
+
+    <Grid>
+        <!-- Определение строк для более удобного управления расположением элементов -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Для заголовка -->
+            <RowDefinition Height="Auto"/>
+            <!-- Для разделителя -->
+            <RowDefinition Height="Auto"/>
+            <!-- Для описания -->
+            <RowDefinition Height="Auto"/>
+            <!-- Для фильтров -->
+            <RowDefinition Height="1*"/>
+            <!-- Для ListView -->
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <Label Foreground="RoyalBlue" FontSize="27" FontWeight="Bold" BorderBrush="LightGray" Grid.Row="0">
+            Авторы
+        </Label>
+        <Separator Grid.Row="1" 
+Background="Black" 
+Height="2" 
+Margin="0,0,30,12"/>
+
+        <!-- Описание литературы -->
+        <TextBlock FontSize="20" MaxWidth="800" Margin="5,0,0,10" TextWrapping="Wrap" HorizontalAlignment="Left" Grid.Row="2">
+ Авторы — это настоящие мастера своего дела, чьи идеи и труды становятся источником вдохновения для множества читателей. Каждый автор, представленный в нашем каталоге, делится уникальными знаниями, опытом и философией, которые помогают изменить подход к жизни, бизнесу и творчеству. От известных экспертов до молодых и перспективных талантов — они все вносят свой вклад в развитие культуры и науки,
+            создавая книги, которые могут изменить ваше восприятие мира. 
+            Погрузитесь в мир авторских мыслей и откройте для себя тех,
+            кто стоит за словами, которые формируют наше будущее.        </TextBlock>
+
+        <!-- Фильтры -->
+        <!--<Border Background="RoyalBlue" Grid.Row="3"  Margin="7,5,20,0" CornerRadius="15">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                --><!-- Фильтр по цене --><!--
+                <TextBlock Text="По цене:" FontSize="20" VerticalAlignment="Top" Grid.Row="0" Margin="15 5 5 5" HorizontalAlignment="Left" Foreground="White"/>
+                <Button Content="Возрастание"  Margin="125 5 5 5" MaxHeight="30" MinWidth="100" HorizontalAlignment="Center" Background="White" BorderThickness="0.5" Grid.Row="0"/>
+                <Button Content="Убывание"  Margin="5 5 5 5" MaxHeight="30" MinWidth="100" HorizontalAlignment="Right" Background="White" BorderThickness="0.5" Grid.Row="0"/>
+
+                --><!-- Фильтр по названию --><!--
+                <TextBlock Text="По названию:" FontSize="20" VerticalAlignment="Top" Margin="15 5 5 5" Grid.Row="1" HorizontalAlignment="Left" Foreground="White"/>
+                <Button Content="А-Я"  Margin="125 5 5 5" MaxHeight="30" MinWidth="100" HorizontalAlignment="Center" Background="White" BorderThickness="0.5" Grid.Row="1"/>
+                <Button Content="Я-A"  Margin="5 8 5 5" MaxHeight="30" MinWidth="100" HorizontalAlignment="Right" Background="White" BorderThickness="0.5" Grid.Row="1"/>
+
+                --><!-- Фильтр по дате --><!--
+                <TextBlock Text="По дате добавления:" FontSize="20" VerticalAlignment="Top" Margin="15 5 5 5" Grid.Row="2" HorizontalAlignment="Left" Foreground="White"/>
+                <Button Content="Новые"  Margin="125 5 5 5" MaxHeight="30" MinWidth="100" HorizontalAlignment="Center" Background="White" BorderThickness="0.5" Grid.Row="2"/>
+                <Button Content="Старые"  Margin="5 8 5 5" MaxHeight="30" MinWidth="100" HorizontalAlignment="Right" Background="White" BorderThickness="0.5" Grid.Row="2"/>
+            </Grid>
+        </Border>-->
+
+        <!-- Список книг -->
+        <ListView x:Name="BooksListView" Margin="10,10,10,10" VerticalAlignment="Top" ItemsSource="{Binding Authors}" BorderThickness="0" Grid.Row="4" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="5" Height="200">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition MinWidth="500"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Картинка автора -->
+                        <Image Source="{Binding Photo, Converter={StaticResource ImageAuthorPathConverter}}" Width="200" Height="200" Margin="0,0,20,0" Grid.Column="0"/>
+
+                        <!-- Детали автора -->
+                        <StackPanel Margin="10 0 10 10" Grid.Column="1" IsHitTestVisible="False">
+                            <TextBlock Text="{Binding Name}" FontSize="20" Foreground="Gray" Margin="0,5,0,5" />
+                            <TextBlock Text="{Binding Bio}" MaxWidth="650" FontSize="20" Margin="0,20,0,0" TextWrapping="Wrap" />
+                            <TextBlock Text="{Binding BirthDate, StringFormat='dd.MM.yyyy'}" TextWrapping="Wrap" FontSize="20" Margin="0,20,0,0" />
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>

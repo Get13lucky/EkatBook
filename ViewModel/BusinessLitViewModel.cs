@@ -1,0 +1,163 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace EkatBooks
+{
+    public class BusinessLitViewModel
+    {
+        private readonly BooksContext _context;
+
+        public ObservableCollection<Book> Books { get; set; }
+
+        public BusinessLitViewModel()
+        {
+            _context = new BooksContext();
+            Books = new ObservableCollection<Book>();
+        }
+
+        public async Task LoadBooksAsync()
+        {
+            var books = await _context.Books
+                                      .Include(b => b.IdAuthorNavigation)
+                                      .Include(b => b.IdCategoryNavigation)
+                                      .ToListAsync();
+
+            Books.Clear();
+            foreach (var book in books)
+            {
+                if (book.IdCategory == 1)
+                {
+                    Books.Add(book);
+                }
+            }
+        }
+
+        public async Task LoadBooksAsyncUptoPrice()
+        {
+            var books = await _context.Books
+                                      .Include(b => b.IdAuthorNavigation)
+                                      .Include(b => b.IdCategoryNavigation)
+                                      .OrderBy(b => b.Price)
+                                      .ToListAsync();
+
+            Books.Clear();
+            foreach (var book in books)
+            {
+                if (book.IdCategory == 1)
+                {
+                    Books.Add(book);
+                }
+            }
+        }
+
+        public async Task LoadBooksAsyncDowntoPrice()
+        {
+            var books = await _context.Books
+                                      .Include(b => b.IdAuthorNavigation)
+                                      .Include(b => b.IdCategoryNavigation)
+                                      .OrderByDescending(b => b.Price)
+                                      .ToListAsync();
+
+            Books.Clear();
+            foreach (var book in books)
+            {
+                if (book.IdCategory == 1)
+                {
+                    Books.Add(book);
+                }
+            }
+        }
+
+        public async Task LoadBooksAsyncUptoNameBook()
+        {
+            var books = await _context.Books
+                                      .FromSqlRaw("SELECT * FROM public.book ORDER BY title")
+                                      .ToListAsync();
+
+            foreach (var book in books)
+            {
+                await _context.Entry(book)
+                              .Reference(b => b.IdAuthorNavigation)
+                              .LoadAsync();
+
+                await _context.Entry(book)
+                              .Reference(b => b.IdCategoryNavigation)
+                              .LoadAsync();
+            }
+
+            Books.Clear();
+            foreach (var book in books)
+            {
+                if (book.IdCategory == 1)
+                {
+                    Books.Add(book);
+                }
+            }
+        }
+
+        public async Task LoadBooksAsyncDowntoNameBook()
+        {
+            var books = await _context.Books
+                                      .FromSqlRaw("SELECT * FROM public.book ORDER BY title DESC")
+                                      .ToListAsync();
+
+            foreach (var book in books)
+            {
+                await _context.Entry(book)
+                              .Reference(b => b.IdAuthorNavigation)
+                              .LoadAsync();
+
+                await _context.Entry(book)
+                              .Reference(b => b.IdCategoryNavigation)
+                              .LoadAsync();
+            }
+
+            Books.Clear();
+            foreach (var book in books)
+            {
+                if (book.IdCategory == 1)
+                {
+                    Books.Add(book);
+                }
+            }
+        }
+
+        public async Task LoadBooksAsyncUptoDate()
+        {
+            var books = await _context.Books
+                                      .Include(b => b.IdAuthorNavigation)
+                                      .Include(b => b.IdCategoryNavigation)
+                                      .OrderByDescending(b => b.PublicationDate)
+                                      .ToListAsync();
+
+            Books.Clear();
+            foreach (var book in books)
+            {
+                if (book.IdCategory == 1)
+                {
+                    Books.Add(book);
+                }
+            }
+        }
+
+        public async Task LoadBooksAsyncDowntoDate()
+        {
+            var books = await _context.Books
+                                      .Include(b => b.IdAuthorNavigation)
+                                      .Include(b => b.IdCategoryNavigation)
+                                      .OrderBy(b => b.PublicationDate)
+                                      .ToListAsync();
+
+            Books.Clear();
+            foreach (var book in books)
+            {
+                if (book.IdCategory == 1)
+                {
+                    Books.Add(book);
+                }
+            }
+        }
+    }
+}

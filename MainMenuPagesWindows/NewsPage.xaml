@@ -1,0 +1,86 @@
+﻿<Page x:Class="EkatBooks.NewsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EkatBooks"
+      mc:Ignorable="d" 
+      x:Name="NewsPageBackround"
+      
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="NewsPage" >
+
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="StorePageStack" Margin="10">
+                <Label Foreground="RoyalBlue" FontSize="27" FontWeight="Bold" >
+                    Новости
+                </Label>
+                <Separator MaxWidth="700" Margin="0 0 270 0"/>
+
+                <!-- Новость 1 -->
+                <Border BorderBrush="#DDD" BorderThickness="1" CornerRadius="5" Padding="10" Margin="0,20,0,0">
+                    <StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0" Source="\images\flowers.jpg" Width="220" Height="220" Margin="0,0,10,0"/>
+
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Text="Новинки этого месяца" FontSize="18"  Foreground="#333"/>
+                                <TextBlock Text="15 июня 2025" FontSize="12" Foreground="Gray" Margin="0,0,0,10"/>
+                                <TextBlock FontSize="15" Margin="-100 0 0 30" Text="В нашем магазине появились долгожданные новинки! Среди них - новая книга Машинное обучение 'Николенко С.И', продолжение бестселлера 'Тайные гробницы'." 
+                                           TextWrapping="Wrap" MaxWidth="600"/>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+                <!-- Новость 2 -->
+                <Border BorderBrush="#DDD" BorderThickness="1" CornerRadius="5" Padding="10" Margin="0,30,0,0">
+                    <StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0" Source="\images\wom.jpg" Width="220" Height="180" Margin="0,0,10,0"/>
+
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Text="Летняя акция для читателей" FontSize="18"  Foreground="#333"/>
+                                <TextBlock Text="1 июня 2025" FontSize="12" Foreground="Gray" Margin="0,0,0,10"/>
+                                <TextBlock FontSize="15" Margin="-100 0 0 30" Text="С 1 по 30 июня успейте приобрести интересные книги для отдыха! При покупке от 3-х книг в магазине очно - дополнительный подарок: фирменный магнит с литературной цитатой." 
+                                           TextWrapping="Wrap" MaxWidth="600"/>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+                <!-- Новость 3 -->
+                <Border BorderBrush="#DDD" BorderThickness="1" CornerRadius="5" Padding="10" Margin="0,30,0,20">
+                    <StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0" Source="\images\meet.jpg" Width="220" Height="180" Margin="0,0,10,0"/>
+
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Text="Встреча с автором" FontSize="18"  Foreground="#333"/>
+                                <TextBlock Text="12 июня 2025" FontSize="12" Foreground="Gray" Margin="0,0,0,10"/>
+                                <TextBlock FontSize="15" Margin="-100 0 0 30" Text="28 июля в 18:00 в нашем магазине состоится встреча с популярным автором детективов Иванов.И.И. Он представит свою новую книгу 'Тени старого города' и ответит на вопросы читателей. Количество мест ограничено." 
+                                           TextWrapping="Wrap" MaxWidth="600"/>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

@@ -1,0 +1,110 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="authors\Lion.jpg" />
+	  <None Remove="images\444.jpg" />
+	  <None Remove="images\atom.png" />
+	  <None Remove="images\basket.png" />
+	  <None Remove="images\bestseller.png" />
+	  <None Remove="images\bookFeather.PNG" />
+	  <None Remove="images\camera.png" />
+	  <None Remove="images\checkMark.png" />
+	  <None Remove="images\computer4.png" />
+	  <None Remove="images\cross.png" />
+	  <None Remove="images\cup.png" />
+	  <None Remove="images\eye.png" />
+	  <None Remove="images\eyeClose.png" />
+	  <None Remove="images\flowers.jpg" />
+	  <None Remove="images\galochka.jpg" />
+	  <None Remove="images\history.png" />
+	  <None Remove="images\law.png" />
+	  <None Remove="images\like.png" />
+	  <None Remove="images\loupe.png" />
+	  <None Remove="images\medal.png" />
+	  <None Remove="images\medicine.png" />
+	  <None Remove="images\meet.jpg" />
+	  <None Remove="images\money.png" />
+	  <None Remove="images\museum.png" />
+	  <None Remove="images\new.png" />
+	  <None Remove="images\per.png" />
+	  <None Remove="images\psycho.png" />
+	  <None Remove="images\random.png" />
+	  <None Remove="images\soon.png" />
+	  <None Remove="images\star.png" />
+	  <None Remove="images\telegram.png" />
+	  <None Remove="images\whats.png" />
+	  <None Remove="images\whats3.png" />
+	  <None Remove="images\whatsup.png" />
+	  <None Remove="images\wom.jpg" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GMap.NET.WinPresentation" Version="2.1.7" />
+    <PackageReference Include="Humanizer.Core" Version="2.14.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql" Version="6.0.13" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="authors\Lion.jpg" />
+    <Resource Include="favicon.ico" />
+    <Resource Include="images\444.jpg" />
+    <Resource Include="images\atom.png" />
+    <Resource Include="images\basket.png" />
+    <Resource Include="images\bestseller.png" />
+    <Resource Include="images\bookFeather.PNG" />
+    <Resource Include="images\camera.png" />
+    <Resource Include="images\checkMark.png" />
+    <Resource Include="images\computer4.png" />
+    <Resource Include="images\cross.png" />
+    <Resource Include="images\cup.png" />
+    <Resource Include="images\eye.png" />
+    <Resource Include="images\eyeClose.png" />
+    <Resource Include="images\favicon.ico" />
+    <Resource Include="images\flowers.jpg" />
+    <Resource Include="images\galochka.jpg" />
+    <Resource Include="images\history.png" />
+    <Resource Include="images\law.png" />
+    <Resource Include="images\like.png" />
+    <Resource Include="images\loupe.png" />
+    <Resource Include="images\medal.png" />
+    <Resource Include="images\medicine.png" />
+    <Resource Include="images\meet.jpg" />
+    <Resource Include="images\money.png" />
+    <Resource Include="images\museum.png" />
+    <Resource Include="images\new.png" />
+    <Resource Include="images\per.png" />
+    <Resource Include="images\psycho.png" />
+    <Resource Include="images\random.png" />
+    <Resource Include="images\soon.png" />
+    <Resource Include="images\star.png" />
+    <Resource Include="images\telegram.png" />
+    <Resource Include="images\whats.png" />
+    <Resource Include="images\whats3.png" />
+    <Resource Include="images\whatsup.png" />
+    <Resource Include="images\wom.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="SQL\" />
+  </ItemGroup>
+
+</Project>

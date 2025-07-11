@@ -1,0 +1,410 @@
+﻿<Window x:Class="EkatBooks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EkatBooks"  
+        KeyDown="Page_KeyDown"
+  
+    
+        Title="EkatBook" Height="594" Width="878" Icon="/images/bookFeather.PNG"   WindowState="Maximized" >
+
+    <ScrollViewer x:Name="PageScrollViewer" VerticalScrollBarVisibility="Auto" >
+        <Grid x:Name="MainGrid" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="89*"></ColumnDefinition>
+                <ColumnDefinition MinWidth="300" Width="311*"></ColumnDefinition >
+
+
+
+
+
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions >
+                <RowDefinition MaxHeight="100" Height="100*">
+                </RowDefinition>
+
+                <RowDefinition Height="284*">
+                </RowDefinition>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+
+
+
+
+            <StackPanel x:Name="MainStack"  Grid.ColumnSpan="2" Grid.Row="0" Background="RoyalBlue"  >
+                <Button Click="ReturnMain" BorderBrush="RoyalBlue"  HorizontalAlignment="Left" Margin="0 -1 700 10" Background="RoyalBlue"  >
+                    <Button.Style>
+                        <Style TargetType="Button">
+
+
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="Cursor" Value="Hand" />
+
+
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Content>
+                        <Image Source="\images\bookFeather.PNG" MaxHeight="130" MaxWidth="80" Cursor="Hand">
+
+                        </Image>
+                    </Button.Content>
+                </Button>
+
+
+
+                <Menu x:Name="MainMenu"  Background="RoyalBlue" Foreground="White" Margin="130 -90 130 90" MaxWidth="1200" MaxHeight="300" HorizontalAlignment="Left" Width="670">
+                    <MenuItem Header="Магазин" FontSize="17" Click="StoreOpen" ></MenuItem>
+                    <Separator />
+                    <MenuItem Header="Издательство" FontSize="17" Click="PublishingHouse" ></MenuItem>
+                    <Separator />
+                    <MenuItem Header="Новости" FontSize="17" Click="NewsPage"></MenuItem>
+                    <Separator />
+                    <MenuItem Header="Авторы" FontSize="17" Click="RightsPage"></MenuItem>
+                    <Separator />
+                    <!--<MenuItem Header="Тема" FontSize="17" Click="ChangeColour" ></MenuItem>
+                    <Separator />-->
+
+                </Menu>
+                <TextBox x:Name="inputTextBox" Margin="135 -90 235 30" MaxHeight="26" MaxWidth="292" HorizontalAlignment="Left" Width="286" Height="23" Text="Найти книгу..." Foreground="Gray" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" />
+                <Button x:Name="ResearchButton" Click="PageResultResearch"  Margin="435 -90 235 30" MaxHeight="24" MaxWidth="24" Width="28" Height="23" Background="White" HorizontalAlignment="Left" MouseEnter="buttonLoupe_MouseEnter" MouseLeave="buttonLoupe_MouseLeave" >
+                    <Image Source="\images\loupe.png" MaxHeight="24" MaxWidth="30" Width="28" Height="23" Margin="-1.4 -2 -2 -2"  HorizontalAlignment="Left" />
+                    
+                </Button>
+                <TextBlock Text="Время работы: Пн-Пт: с 10:00 до 18:00" 
+           Foreground="White" 
+           Margin="10,-75,220,40" 
+           MinHeight="40" 
+           MinWidth="250" 
+           FontSize="20" 
+           HorizontalAlignment="Right" />
+                <TextBlock Text="
+                8 (912) 500 33 77" 
+                Foreground="WhiteSmoke" 
+               Margin="10,-80,10,40" 
+                MinHeight="40" 
+                MinWidth="250" 
+                FontSize="20" 
+                HorizontalAlignment="Right" />
+
+
+
+
+                <Button Click="PageBasket"  MaxHeight="50" MaxWidth="50"  Margin="-40 -200 360 15"  HorizontalAlignment="Right" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" Background="{x:Null}" Cursor="Hand" Focusable="False" RenderTransformOrigin="1,1"   >
+
+
+
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+
+
+                    <Button.Content>
+                        <Image Source="\images\basket.png"    HorizontalAlignment="Right" Cursor="Hand"   >
+
+                        </Image>
+                    </Button.Content>
+
+                    <Button.ToolTip >
+                        <ToolTip Content="Ваша корзина пуста!" Background="White" Foreground="Black" FontSize="15" MinHeight="50" MinWidth="100"/>
+                    </Button.ToolTip>
+
+                </Button>
+
+                <Button Click="WindowProfileOpen" BorderBrush="RoyalBlue" Background="RoyalBlue"  HorizontalAlignment="Right" Margin="0 -220 50 0" Height="50" Width="50"  >
+
+
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+
+                    <Button.Content>
+                        <Image Source="\images\per.png"     HorizontalAlignment="Right" Cursor="Hand"   >
+
+                        </Image>
+                    </Button.Content>
+                </Button>
+
+            </StackPanel>
+
+            <StackPanel  x:Name="MainStack_2" Grid.Row="1"  >
+
+                <TabControl  x:Name="MainTabControl" HorizontalAlignment="Stretch" BorderThickness="0" Margin="3" FontSize="16" Background="White">
+
+                 
+
+                    <TabItem   Header="Книги"  BorderThickness="0" HorizontalAlignment="Stretch" MinWidth="133">
+                        
+                        <StackPanel x:Name="Mas" >
+
+                            <Button BorderThickness="0" Background="White" Click="BusinessLit" Margin="0 0 0 5">
+                                <StackPanel Orientation="Horizontal" >
+                                    <Image Source="\images\money.png" Width="20" Height="20" Margin="5" />
+                                    <TextBlock Text=" Бизнес-литература" VerticalAlignment="Center" Margin="5"  Width="228" Height="20" />
+                                </StackPanel>
+                            </Button>
+
+
+                            <Button BorderThickness="0" Background="White" Margin="0 0 0 5" Click="PageComputerCategory">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                    <Image Source="\images\computer4.png" Width="20" Height="18" Margin="-10 0 0 0" />
+                                    <TextBlock Text="   Компьютерная литература" Width="226" Height="20" />
+                                </StackPanel>
+                            </Button>
+
+                            <Button BorderThickness="0" Background="White" Margin="0 0 0 5" Click="PageScienceEdu">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 5 1 1">
+                                    <Image Source="\images\atom.png" Width="20" Height="18" Margin="-10 0  0 0" />
+                                    <TextBlock Text="   Наука и образование" Width="226" Height="20" />
+                                </StackPanel>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Margin="0 0 0 5" Click="PagePubHis">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 5 1 1">
+                                    <Image Source="\images\museum.png" Width="20" Height="18" Margin="-10 0  0 0" />
+                                    <TextBlock Text="   Публицистика и история" Width="226" Height="20" />
+                                </StackPanel>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Margin="0 0 0 5" Click="PageMedical">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 5 1 1">
+                                    <Image Source="\images\medicine.png" Width="20" Height="18" Margin="-10 0  0 0" />
+                                    <TextBlock Text="   Медицинская литература" Width="226" Height="20" />
+                                </StackPanel>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Margin="0 0 0 5" Click="PagePsycho">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 5 1 1">
+                                    <Image Source="\images\psycho.png" Width="20" Height="18" Margin="-10 0  0 0" />
+                                    <TextBlock Text="   Психологическая литература" Width="226" Height="20" />
+                                </StackPanel>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Margin="0 0 0 5" Click="PageLaw">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 5 1 1">
+                                    <Image Source="\images\law.png" Width="20" Height="18" Margin="-10 0  0 0" />
+                                    <TextBlock Text="   Юридическая литература" Width="226" Height="20" />
+                                </StackPanel>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Margin="0 0 0 5" Click="PageArt">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 5 1 1">
+                                    <Image Source="\images\history.png" Width="20" Height="18" Margin="-10 0  0 0" />
+                                    <TextBlock Text="   Художественная литература" Width="226" Height="20" />
+                                </StackPanel>
+                            </Button>
+
+
+
+                        </StackPanel>
+                    </TabItem>
+
+                    <TabItem  Header="Тренды" BorderThickness="0" HorizontalAlignment="Stretch" MinWidth="133" Background="white" >
+                       
+                        <WrapPanel x:Name="MainWrapPanel" Margin="5 2 0 0"  >
+                            <Button BorderThickness="0" Background="White" Click="NewsBooks"  >
+                                <StackPanel Orientation="Horizontal" >
+                                    <Image Source="\Images\new.png" Width="20" Height="20" Margin="0 0 7 0" />
+                                    <TextBlock Text=" Новинки" VerticalAlignment="Center" Margin="5"  Width="228" Height="20" />
+                                </StackPanel>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Click="PageBestSeller" >
+                                <StackPanel Orientation="Horizontal" >
+                                    <Image Source="\Images\bestseller.png" Width="20" Height="20" Margin="0 0 7 0" />
+                                    <TextBlock Text=" Бестселлеры" VerticalAlignment="Center" Margin="5"  Width="228" Height="20" />
+                                </StackPanel>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Click="PageSoonBooks" >
+                                <StackPanel Orientation="Horizontal" >
+                                    <Image Source="\Images\soon.png" Width="20" Height="20" Margin="0 0 7 0" />
+                                    <TextBlock Text=" Скоро" VerticalAlignment="Center" Margin="5"  Width="228" Height="20" />
+                                </StackPanel>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Click="PageRecommend" >
+                                <StackPanel Orientation="Horizontal" >
+                                    <Image Source="\Images\like.png" Width="20" Height="20" Margin="0 0 7 0" />
+                                    <TextBlock Text=" Рекомендуем" VerticalAlignment="Center" Margin="5"  Width="228" Height="20" />
+                                </StackPanel>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Click="PageFilm" >
+                                <StackPanel Orientation="Horizontal" >
+                                    <Image Source="\Images\camera.png" Width="20" Height="20" Margin="0 0 7 0" />
+                                    <TextBlock Text=" Экранизация" VerticalAlignment="Center" Margin="5"  Width="228" Height="20" />
+                                </StackPanel>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Click="PageTop" >
+                                <StackPanel Orientation="Horizontal" >
+                                    <Image Source="\Images\cup.png" Width="20" Height="20" Margin="0 0 7 0" />
+                                    <TextBlock Text=" Топ 10" VerticalAlignment="Center" Margin="5"  Width="228" Height="20" />
+                                </StackPanel>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Click="PageByChance" >
+                                <StackPanel Orientation="Horizontal" >
+                                    <Image Source="\Images\random.png" Width="20" Height="20" Margin="0 0 7 0" />
+                                    <TextBlock Text=" Cлучайная книга" VerticalAlignment="Center" Margin="5"  Width="228" Height="20" />
+                                </StackPanel>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Click="PageNobel" >
+                                <StackPanel Orientation="Horizontal" >
+                                    <Image Source="\Images\medal.png" Width="20" Height="20" Margin="0 0 7 0" />
+                                    <TextBlock Text=" Нобелевская премия" VerticalAlignment="Center" Margin="5"  Width="228" Height="20" />
+                                </StackPanel>
+                            </Button>
+
+
+
+
+
+                            <!--<Button x:Name="MainButton_1" BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="А" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Б" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="В" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Г" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Д" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Е" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Ё" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Ж" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="З" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="И" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Й" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="К" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Л" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="М" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Н" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="О" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="П" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Р" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="С" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Т" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="У" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Ф" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Х" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Ц" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Ч" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Ш" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Щ" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Ъ" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Ы" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Ь" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Э" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Ю" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>
+                            <Button BorderThickness="0" Background="White" Width="40" Height="40">
+                                <TextBlock Text="Я" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+                            </Button>-->
+                        </WrapPanel>
+
+
+
+                    </TabItem>
+                </TabControl>
+
+
+            </StackPanel>
+
+            <DockPanel Grid.Column="0" Grid.Row="2" Background="RoyalBlue" Grid.ColumnSpan="2">
+                <StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="20 10 0 0">
+
+                        <TextBlock Text="г. Екатеринбург, Крауля 74" Foreground="White" FontSize="17" />
+
+
+                        <TextBlock Text="EkatBook" Foreground="White" HorizontalAlignment="Center" FontSize="30" FontFamily="Modern No. 20" Margin="360 -6 0 0"/>
+                    </StackPanel>
+
+
+                    <StackPanel Orientation="Horizontal" Margin="60 -10 0 0">
+                        
+                        <Button   Background="RoyalBlue"  Height="50" Width="50"  Click="Button_ClickTelegram" >
+                            <Button.Content>
+                                <Image Source="\images\telegram.png" MaxHeight="50" MaxWidth="50" Width="69" Height="46"/>
+                            </Button.Content>
+                        </Button>
+
+                        <Button   Background="RoyalBlue"  Height="50" Width="64"  Click="Button_ClickWhatsUp" >
+                            <Button.Content>
+                                <Image Source="\Images\whats3.png" MinHeight="50" MinWidth="60" Width="73" Height="46" Margin="10 0 0 1"/>
+                            </Button.Content>
+                        </Button>
+
+
+
+                        
+                        <TextBlock  Text="мир книг в одном клике" Foreground="White" FontSize="25"  Margin="330 10 450 40" FontFamily="Georgia" Height="42" />
+                        <TextBlock  Text="© 1980 - 2025 EkatBook" Foreground="White" FontSize="15"  Margin="-900 50 140 0"  Height="42" Width="301" />
+                        <TextBlock Text="8 (912) 500 33 77" Foreground="WhiteSmoke" Margin="-170 10 450 40" MinHeight="40" MinWidth="250" FontSize="25" HorizontalAlignment="Right" />
+                    </StackPanel>
+                </StackPanel>
+            </DockPanel>
+
+
+
+
+
+            <Frame Name="MainFrame"  NavigationUIVisibility="Hidden" Grid.Row="1" Grid.Column="1" />
+
+        </Grid>
+    </ScrollViewer>
+
+</Window>

@@ -1,0 +1,1544 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\EkatBooks\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\sql\\script.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:sql\\script.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\sql\\shema.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:sql\\shema.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\converters\\roletovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:converters\\roletovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\converters\\imagepathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:converters\\imagepathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\converters\\imageauthorpathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:converters\\imageauthorpathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\converters\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:converters\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\rightspageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\rightspageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\mainmenupageswindows\\returnmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:mainmenupageswindows\\returnmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\pagereturnmainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\pagereturnmainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\bookscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:bookscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\mainmenupageswindows\\rightspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:mainmenupageswindows\\rightspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\mainmenupageswindows\\returnmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:mainmenupageswindows\\returnmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\mainmenupageswindows\\publishinghouse.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:mainmenupageswindows\\publishinghouse.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\mainmenupageswindows\\rightspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:mainmenupageswindows\\rightspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\windowmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\windowmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\pageunsuccesscreationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\pageunsuccesscreationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\mainmenupageswindows\\pageresultresearch.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:mainmenupageswindows\\pageresultresearch.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\mainmenupageswindows\\newspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:mainmenupageswindows\\newspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\pageunsuccesscreation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\pageunsuccesscreation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\pagebasket.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\pagebasket.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\windowmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\windowmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\windoworder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\windoworder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagetop.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagetop.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagetop.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagetop.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagesoonbooks.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagesoonbooks.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagesoonbooks.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagesoonbooks.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagerecommend.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagerecommend.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagerecommend.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagerecommend.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagenobel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagenobel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagenobel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagenobel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagenewsbooks.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagenewsbooks.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagenewsbooks.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagenewsbooks.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagefilm.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagefilm.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagefilm.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagefilm.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagebychance.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagebychance.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagebychance.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagebychance.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagebestseller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagebestseller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesoftrends\\pagebestseller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesoftrends\\pagebestseller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pagescienceedu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pagescienceedu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pagescienceedu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pagescienceedu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pagepubhis.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pagepubhis.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pagepubhis.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pagepubhis.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pagepsycho.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pagepsycho.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pagepsycho.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pagepsycho.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pagemedical.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pagemedical.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pagemedical.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pagemedical.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pagelaw.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pagelaw.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pagelaw.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pagelaw.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pagecomputercategory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pagecomputercategory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pagecomputercategory.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pagecomputercategory.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pageart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pageart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\pageart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\pageart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\businesslit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\businesslit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\pagesofcategories\\businesslit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:pagesofcategories\\businesslit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\windowreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\windowreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\windowreview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\windowreview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\userwpf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:userwpf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\pagebasket.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\pagebasket.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\windowprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\windowprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\windowprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\windowprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\pagesuccesscreation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\pagesuccesscreation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\pagecreateprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\pagecreateprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\pageprofile_1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\pageprofile_1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\pagerecoverypassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\pagerecoverypassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\pagecreateprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\pagecreateprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\tempcartmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:tempcartmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\cartmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:cartmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\bychanceviewmodel1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\bychanceviewmodel1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\businesslitviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\businesslitviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\pagebestsellerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\pagebestsellerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\nobelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\nobelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\topviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\topviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\pagefilmviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\pagefilmviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\pagerecommendviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\pagerecommendviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\pageartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\pageartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\pagelawviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\pagelawviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\computerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\computerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\pagepsychoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\pagepsychoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\pagepubhisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\pagepubhisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\viewmodel\\medicineviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:viewmodel\\medicineviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\pageunsuccesscreation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\pageunsuccesscreation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\pageprofile_1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\pageprofile_1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\pagerecoverypassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\pagerecoverypassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\basketandprofile\\windoworder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:basketandprofile\\windoworder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\ekatbooks.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:ekatbooks.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\mainmenupageswindows\\pageresultresearch.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:mainmenupageswindows\\pageresultresearch.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\images\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:images\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|c:\\users\\user\\source\\repos\\ekatbooks\\mainmenupageswindows\\storewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE00A2B0-224D-4C44-847F-F75042425EFB}|EkatBooks.csproj|solutionrelative:mainmenupageswindows\\storewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\7c39dede8d7ebdfdbdef9df41f0b1ca336835c2b40460aff1aa804187805538a\\NavigationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 223,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "PageBasket.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageBasket.xaml.cs",
+              "RelativeDocumentMoniker": "BasketAndProfile\\PageBasket.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageBasket.xaml.cs",
+              "RelativeToolTip": "BasketAndProfile\\PageBasket.xaml.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAiwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T13:42:55.93Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BooksContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BooksContext.cs",
+              "RelativeDocumentMoniker": "BooksContext.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BooksContext.cs",
+              "RelativeToolTip": "BooksContext.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAkwG4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T05:22:10.072Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WindowManager.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowManager.xaml",
+              "RelativeDocumentMoniker": "BasketAndProfile\\WindowManager.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowManager.xaml",
+              "RelativeToolTip": "BasketAndProfile\\WindowManager.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T05:16:18.478Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "WindowManager.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowManager.xaml.cs",
+              "RelativeDocumentMoniker": "BasketAndProfile\\WindowManager.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowManager.xaml.cs",
+              "RelativeToolTip": "BasketAndProfile\\WindowManager.xaml.cs",
+              "ViewState": "AgIAAC0CAAAAAAAAAAAUwCsDAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T05:06:56.692Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "WindowOrder.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowOrder.xaml",
+              "RelativeDocumentMoniker": "BasketAndProfile\\WindowOrder.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowOrder.xaml",
+              "RelativeToolTip": "BasketAndProfile\\WindowOrder.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T13:40:22.45Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "WindowOrder.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowOrder.xaml.cs",
+              "RelativeDocumentMoniker": "BasketAndProfile\\WindowOrder.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowOrder.xaml.cs",
+              "RelativeToolTip": "BasketAndProfile\\WindowOrder.xaml.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAqwI4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T13:44:22.201Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PageUnSuccessCreation.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageUnSuccessCreation.xaml",
+              "RelativeDocumentMoniker": "BasketAndProfile\\PageUnSuccessCreation.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageUnSuccessCreation.xaml",
+              "RelativeToolTip": "BasketAndProfile\\PageUnSuccessCreation.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T06:29:23.956Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "PageUnSuccessCreation.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageUnSuccessCreation.xaml.cs",
+              "RelativeDocumentMoniker": "BasketAndProfile\\PageUnSuccessCreation.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageUnSuccessCreation.xaml.cs",
+              "RelativeToolTip": "BasketAndProfile\\PageUnSuccessCreation.xaml.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAlwG4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T06:29:27.018Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "PageProfile_1.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageProfile_1.xaml",
+              "RelativeDocumentMoniker": "BasketAndProfile\\PageProfile_1.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageProfile_1.xaml",
+              "RelativeToolTip": "BasketAndProfile\\PageProfile_1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T05:07:49.6Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NewsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\NewsPage.xaml",
+              "RelativeDocumentMoniker": "MainMenuPagesWindows\\NewsPage.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\NewsPage.xaml",
+              "RelativeToolTip": "MainMenuPagesWindows\\NewsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T13:40:34.972Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "script.txt",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\SQL\\script.txt",
+              "RelativeDocumentMoniker": "SQL\\script.txt",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\SQL\\script.txt",
+              "RelativeToolTip": "SQL\\script.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-11T13:08:48.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "shema.txt",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\SQL\\shema.txt",
+              "RelativeDocumentMoniker": "SQL\\shema.txt",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\SQL\\shema.txt",
+              "RelativeToolTip": "SQL\\shema.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-11T13:07:14.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ImageAuthorPathConverter.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\Converters\\ImageAuthorPathConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\ImageAuthorPathConverter.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\Converters\\ImageAuthorPathConverter.cs",
+              "RelativeToolTip": "Converters\\ImageAuthorPathConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T17:16:02.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ImagePathConverter.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\Converters\\ImagePathConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\ImagePathConverter.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\Converters\\ImagePathConverter.cs",
+              "RelativeToolTip": "Converters\\ImagePathConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T17:20:45.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\Converters\\RoleToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\RoleToVisibilityConverter.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\Converters\\RoleToVisibilityConverter.cs",
+              "RelativeToolTip": "Converters\\RoleToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T17:35:57.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BooleanToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\Converters\\BooleanToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\BooleanToVisibilityConverter.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\Converters\\BooleanToVisibilityConverter.cs",
+              "RelativeToolTip": "Converters\\BooleanToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T17:36:01.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RightsPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\RightsPageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\RightsPageViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\RightsPageViewModel.cs",
+              "RelativeToolTip": "ViewModel\\RightsPageViewModel.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAjwBgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T02:42:52.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReturnMain.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\ReturnMain.xaml",
+              "RelativeDocumentMoniker": "MainMenuPagesWindows\\ReturnMain.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\ReturnMain.xaml",
+              "RelativeToolTip": "MainMenuPagesWindows\\ReturnMain.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T13:40:45.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RightsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\RightsPage.xaml",
+              "RelativeDocumentMoniker": "MainMenuPagesWindows\\RightsPage.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\RightsPage.xaml",
+              "RelativeToolTip": "MainMenuPagesWindows\\RightsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T13:40:49.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PageReturnMainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageReturnMainViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PageReturnMainViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageReturnMainViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PageReturnMainViewModel.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowEEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T02:53:12.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PublishingHouse.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\PublishingHouse.xaml",
+              "RelativeDocumentMoniker": "MainMenuPagesWindows\\PublishingHouse.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\PublishingHouse.xaml",
+              "RelativeToolTip": "MainMenuPagesWindows\\PublishingHouse.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T13:40:39.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RightsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\RightsPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainMenuPagesWindows\\RightsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\RightsPage.xaml.cs",
+              "RelativeToolTip": "MainMenuPagesWindows\\RightsPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T02:42:24.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReturnMain.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\ReturnMain.xaml.cs",
+              "RelativeDocumentMoniker": "MainMenuPagesWindows\\ReturnMain.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\ReturnMain.xaml.cs",
+              "RelativeToolTip": "MainMenuPagesWindows\\ReturnMain.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAArwCcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T01:15:30.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PageUnSuccessCreationViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageUnSuccessCreationViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PageUnSuccessCreationViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageUnSuccessCreationViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PageUnSuccessCreationViewModel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAASwDAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T16:43:34.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PageResultResearch.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\PageResultResearch.xaml",
+              "RelativeDocumentMoniker": "MainMenuPagesWindows\\PageResultResearch.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\PageResultResearch.xaml",
+              "RelativeToolTip": "MainMenuPagesWindows\\PageResultResearch.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T13:40:37.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PageBasket.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageBasket.xaml",
+              "RelativeDocumentMoniker": "BasketAndProfile\\PageBasket.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageBasket.xaml",
+              "RelativeToolTip": "BasketAndProfile\\PageBasket.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T13:40:29.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PageTop.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageTop.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageTop.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageTop.xaml.cs",
+              "RelativeToolTip": "PagesOfTrends\\PageTop.xaml.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAgwFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T14:16:07.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PageTop.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageTop.xaml",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageTop.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageTop.xaml",
+              "RelativeToolTip": "PagesOfTrends\\PageTop.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T14:12:43.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PageSoonBooks.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageSoonBooks.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageSoonBooks.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageSoonBooks.xaml.cs",
+              "RelativeToolTip": "PagesOfTrends\\PageSoonBooks.xaml.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAuwEcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T02:21:17.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PageSoonBooks.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageSoonBooks.xaml",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageSoonBooks.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageSoonBooks.xaml",
+              "RelativeToolTip": "PagesOfTrends\\PageSoonBooks.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-27T02:20:52.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PageRecommend.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageRecommend.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageRecommend.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageRecommend.xaml.cs",
+              "RelativeToolTip": "PagesOfTrends\\PageRecommend.xaml.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAuwFEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T13:45:17.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PageRecommend.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageRecommend.xaml",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageRecommend.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageRecommend.xaml",
+              "RelativeToolTip": "PagesOfTrends\\PageRecommend.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T13:42:04.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PageNobel.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageNobel.xaml",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageNobel.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageNobel.xaml",
+              "RelativeToolTip": "PagesOfTrends\\PageNobel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T14:33:03.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PageNobel.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageNobel.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageNobel.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageNobel.xaml.cs",
+              "RelativeToolTip": "PagesOfTrends\\PageNobel.xaml.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAuwFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T14:35:32.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PageNewsBooks.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageNewsBooks.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageNewsBooks.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageNewsBooks.xaml.cs",
+              "RelativeToolTip": "PagesOfTrends\\PageNewsBooks.xaml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAuwEYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T02:19:51.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PageFilm.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageFilm.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageFilm.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageFilm.xaml.cs",
+              "RelativeToolTip": "PagesOfTrends\\PageFilm.xaml.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAuwFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T13:58:55.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PageFilm.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageFilm.xaml",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageFilm.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageFilm.xaml",
+              "RelativeToolTip": "PagesOfTrends\\PageFilm.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T13:57:06.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PageByChance.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageByChance.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageByChance.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageByChance.xaml.cs",
+              "RelativeToolTip": "PagesOfTrends\\PageByChance.xaml.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAvwFQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T15:01:43.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PageNewsBooks.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageNewsBooks.xaml",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageNewsBooks.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageNewsBooks.xaml",
+              "RelativeToolTip": "PagesOfTrends\\PageNewsBooks.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T13:43:55.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PageByChance.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageByChance.xaml",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageByChance.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageByChance.xaml",
+              "RelativeToolTip": "PagesOfTrends\\PageByChance.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T15:01:10.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PageBestSeller.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageBestSeller.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageBestSeller.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageBestSeller.xaml.cs",
+              "RelativeToolTip": "PagesOfTrends\\PageBestSeller.xaml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAgwEcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T13:45:01.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PageBestSeller.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageBestSeller.xaml",
+              "RelativeDocumentMoniker": "PagesOfTrends\\PageBestSeller.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfTrends\\PageBestSeller.xaml",
+              "RelativeToolTip": "PagesOfTrends\\PageBestSeller.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T13:43:37.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "PageScienceEdu.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageScienceEdu.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PageScienceEdu.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageScienceEdu.xaml.cs",
+              "RelativeToolTip": "PagesOfCategories\\PageScienceEdu.xaml.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwEcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T02:16:32.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PagePubHis.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PagePubHis.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PagePubHis.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PagePubHis.xaml.cs",
+              "RelativeToolTip": "PagesOfCategories\\PagePubHis.xaml.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwFMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:08:18.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "PagePubHis.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PagePubHis.xaml",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PagePubHis.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PagePubHis.xaml",
+              "RelativeToolTip": "PagesOfCategories\\PagePubHis.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T10:03:10.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "PagePsycho.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PagePsycho.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PagePsycho.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PagePsycho.xaml.cs",
+              "RelativeToolTip": "PagesOfCategories\\PagePsycho.xaml.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwFMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:44:31.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PageScienceEdu.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageScienceEdu.xaml",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PageScienceEdu.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageScienceEdu.xaml",
+              "RelativeToolTip": "PagesOfCategories\\PageScienceEdu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T10:18:54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "PagePsycho.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PagePsycho.xaml",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PagePsycho.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PagePsycho.xaml",
+              "RelativeToolTip": "PagesOfCategories\\PagePsycho.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T10:43:13.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "PageMedical.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageMedical.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PageMedical.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageMedical.xaml.cs",
+              "RelativeToolTip": "PagesOfCategories\\PageMedical.xaml.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwFMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:30:45.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "PageMedical.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageMedical.xaml",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PageMedical.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageMedical.xaml",
+              "RelativeToolTip": "PagesOfCategories\\PageMedical.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T10:28:57.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "PageLaw.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageLaw.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PageLaw.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageLaw.xaml.cs",
+              "RelativeToolTip": "PagesOfCategories\\PageLaw.xaml.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAtwFMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:09:09.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PageLaw.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageLaw.xaml",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PageLaw.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageLaw.xaml",
+              "RelativeToolTip": "PagesOfCategories\\PageLaw.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T10:18:18.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "PageComputerCategory.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageComputerCategory.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PageComputerCategory.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageComputerCategory.xaml.cs",
+              "RelativeToolTip": "PagesOfCategories\\PageComputerCategory.xaml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAgwEcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:02:39.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "PageComputerCategory.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageComputerCategory.xaml",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PageComputerCategory.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageComputerCategory.xaml",
+              "RelativeToolTip": "PagesOfCategories\\PageComputerCategory.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T10:02:20.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "PageArt.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageArt.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PageArt.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageArt.xaml.cs",
+              "RelativeToolTip": "PagesOfCategories\\PageArt.xaml.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAmwGAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:15:05.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "PageArt.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageArt.xaml",
+              "RelativeDocumentMoniker": "PagesOfCategories\\PageArt.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\PageArt.xaml",
+              "RelativeToolTip": "PagesOfCategories\\PageArt.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T11:13:39.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "WindowReview.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowReview.xaml",
+              "RelativeDocumentMoniker": "BasketAndProfile\\WindowReview.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowReview.xaml",
+              "RelativeToolTip": "BasketAndProfile\\WindowReview.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-27T01:10:12.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "BusinessLit.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\BusinessLit.xaml",
+              "RelativeDocumentMoniker": "PagesOfCategories\\BusinessLit.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\BusinessLit.xaml",
+              "RelativeToolTip": "PagesOfCategories\\BusinessLit.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T15:51:12.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "BusinessLit.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\BusinessLit.xaml.cs",
+              "RelativeDocumentMoniker": "PagesOfCategories\\BusinessLit.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\PagesOfCategories\\BusinessLit.xaml.cs",
+              "RelativeToolTip": "PagesOfCategories\\BusinessLit.xaml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAgwEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T15:51:18.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "WindowReview.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowReview.xaml.cs",
+              "RelativeDocumentMoniker": "BasketAndProfile\\WindowReview.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowReview.xaml.cs",
+              "RelativeToolTip": "BasketAndProfile\\WindowReview.xaml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAjwDoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T01:10:28.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Userwpf.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\Userwpf.cs",
+              "RelativeDocumentMoniker": "Userwpf.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\Userwpf.cs",
+              "RelativeToolTip": "Userwpf.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T01:37:44.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\Review.cs",
+              "RelativeDocumentMoniker": "Review.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\Review.cs",
+              "RelativeToolTip": "Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T01:35:08.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAgwGwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T16:13:24.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-25T15:48:44.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "WindowProfile.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowProfile.xaml",
+              "RelativeDocumentMoniker": "BasketAndProfile\\WindowProfile.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowProfile.xaml",
+              "RelativeToolTip": "BasketAndProfile\\WindowProfile.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T13:40:18.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "PageSuccessCreation.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageSuccessCreation.xaml",
+              "RelativeDocumentMoniker": "BasketAndProfile\\PageSuccessCreation.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageSuccessCreation.xaml",
+              "RelativeToolTip": "BasketAndProfile\\PageSuccessCreation.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T07:16:55.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "PageCreateProfile.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageCreateProfile.xaml",
+              "RelativeDocumentMoniker": "BasketAndProfile\\PageCreateProfile.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageCreateProfile.xaml",
+              "RelativeToolTip": "BasketAndProfile\\PageCreateProfile.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T06:13:42.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "WindowProfile.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowProfile.xaml.cs",
+              "RelativeDocumentMoniker": "BasketAndProfile\\WindowProfile.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\WindowProfile.xaml.cs",
+              "RelativeToolTip": "BasketAndProfile\\WindowProfile.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T14:41:54.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "PageRecoveryPassword.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageRecoveryPassword.xaml",
+              "RelativeDocumentMoniker": "BasketAndProfile\\PageRecoveryPassword.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageRecoveryPassword.xaml",
+              "RelativeToolTip": "BasketAndProfile\\PageRecoveryPassword.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T14:37:45.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "PageCreateProfile.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageCreateProfile.xaml.cs",
+              "RelativeDocumentMoniker": "BasketAndProfile\\PageCreateProfile.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageCreateProfile.xaml.cs",
+              "RelativeToolTip": "BasketAndProfile\\PageCreateProfile.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T06:13:43.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "ByChanceViewModel1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\ByChanceViewModel1.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ByChanceViewModel1.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\ByChanceViewModel1.cs",
+              "RelativeToolTip": "ViewModel\\ByChanceViewModel1.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAIAywK0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T14:59:56.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T16:30:16.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\UserSession.cs",
+              "RelativeDocumentMoniker": "UserSession.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\UserSession.cs",
+              "RelativeToolTip": "UserSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:33:48.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "TempCartManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\TempCartManager.cs",
+              "RelativeDocumentMoniker": "TempCartManager.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\TempCartManager.cs",
+              "RelativeToolTip": "TempCartManager.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAlwEAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T16:29:41.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "CartManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\CartManager.cs",
+              "RelativeDocumentMoniker": "CartManager.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\CartManager.cs",
+              "RelativeToolTip": "CartManager.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAApwLUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T06:22:19.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "BusinessLitViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\BusinessLitViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\BusinessLitViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\BusinessLitViewModel.cs",
+              "RelativeToolTip": "ViewModel\\BusinessLitViewModel.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAADwv6AAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T16:21:10.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "NobelViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\NobelViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\NobelViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\NobelViewModel.cs",
+              "RelativeToolTip": "ViewModel\\NobelViewModel.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAmwDIAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T14:31:01.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "PageBestSellerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageBestSellerViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PageBestSellerViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageBestSellerViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PageBestSellerViewModel.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAAKsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T13:40:51.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "TopViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\TopViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\TopViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\TopViewModel.cs",
+              "RelativeToolTip": "ViewModel\\TopViewModel.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAADwv64AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T14:10:57.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "PageFilmViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageFilmViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PageFilmViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageFilmViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PageFilmViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAKQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T13:55:12.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "PageRecommendViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageRecommendViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PageRecommendViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageRecommendViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PageRecommendViewModel.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAmwKQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T13:40:21.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "PageArtViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageArtViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PageArtViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageArtViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PageArtViewModel.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAADwv6QAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:12:20.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "PageLawViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageLawViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PageLawViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PageLawViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PageLawViewModel.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwCEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:06:29.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "ComputerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\ComputerViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ComputerViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\ComputerViewModel.cs",
+              "RelativeToolTip": "ViewModel\\ComputerViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:04:05.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "PagePsychoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PagePsychoViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PagePsychoViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PagePsychoViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PagePsychoViewModel.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAADwvyEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:46:34.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "PagePubHisViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PagePubHisViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PagePubHisViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\PagePubHisViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PagePubHisViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:05:12.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "MedicineViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\MedicineViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MedicineViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\ViewModel\\MedicineViewModel.cs",
+              "RelativeToolTip": "ViewModel\\MedicineViewModel.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAmwKUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:26:16.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "PageProfile_1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageProfile_1.xaml.cs",
+              "RelativeDocumentMoniker": "BasketAndProfile\\PageProfile_1.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageProfile_1.xaml.cs",
+              "RelativeToolTip": "BasketAndProfile\\PageProfile_1.xaml.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAApwGkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T16:16:26.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "PageRecoveryPassword.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageRecoveryPassword.xaml.cs",
+              "RelativeDocumentMoniker": "BasketAndProfile\\PageRecoveryPassword.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\BasketAndProfile\\PageRecoveryPassword.xaml.cs",
+              "RelativeToolTip": "BasketAndProfile\\PageRecoveryPassword.xaml.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAqwKMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T08:22:45.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "EkatBooks.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\EkatBooks.csproj",
+              "RelativeDocumentMoniker": "EkatBooks.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\EkatBooks.csproj",
+              "RelativeToolTip": "EkatBooks.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-25T16:33:06.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "PageResultResearch.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\PageResultResearch.xaml.cs",
+              "RelativeDocumentMoniker": "MainMenuPagesWindows\\PageResultResearch.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\PageResultResearch.xaml.cs",
+              "RelativeToolTip": "MainMenuPagesWindows\\PageResultResearch.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T16:57:36.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T15:52:10.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "favicon.ico -  [\u0420\u0443\u0441\u0441\u043A\u0438\u0439 (\u0420\u043E\u0441\u0441\u0438\u044F)] - Icon [16x16, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, BMP]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\images\\favicon.ico",
+              "RelativeDocumentMoniker": "images\\favicon.ico",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\images\\favicon.ico -  [\u0420\u0443\u0441\u0441\u043A\u0438\u0439 (\u0420\u043E\u0441\u0441\u0438\u044F)] - Icon [16x16, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, BMP]",
+              "RelativeToolTip": "images\\favicon.ico -  [\u0420\u0443\u0441\u0441\u043A\u0438\u0439 (\u0420\u043E\u0441\u0441\u0438\u044F)] - Icon [16x16, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2025-06-25T16:35:07.77Z",
+              "EditorCaption": " -  [\u0420\u0443\u0441\u0441\u043A\u0438\u0439 (\u0420\u043E\u0441\u0441\u0438\u044F)] - Icon [16x16, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, BMP]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "StoreWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\StoreWindow.xaml",
+              "RelativeDocumentMoniker": "MainMenuPagesWindows\\StoreWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\EkatBooks\\MainMenuPagesWindows\\StoreWindow.xaml",
+              "RelativeToolTip": "MainMenuPagesWindows\\StoreWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-25T16:15:33.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\7c39dede8d7ebdfdbdef9df41f0b1ca336835c2b40460aff1aa804187805538a\\NavigationService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7c39dede8d7ebdfdbdef9df41f0b1ca336835c2b40460aff1aa804187805538a\\NavigationService.cs",
+              "ToolTip": "C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\7c39dede8d7ebdfdbdef9df41f0b1ca336835c2b40460aff1aa804187805538a\\NavigationService.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7c39dede8d7ebdfdbdef9df41f0b1ca336835c2b40460aff1aa804187805538a\\NavigationService.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAADMEAAAAAAAAAAD4v0AEAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:45:54.107Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

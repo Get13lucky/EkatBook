@@ -1,0 +1,61 @@
+﻿<Page x:Class="EkatBooks.StoreWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EkatBooks"
+      xmlns:gmaps="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation"
+      x:Name="StorePageBackround"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StoreWindow" Background="White">
+
+    <ScrollViewer x:Name="mainScrollViewer" VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Foreground="RoyalBlue" FontSize="27" FontWeight="Bold" BorderBrush="LightGray">
+                Магазин
+            </Label>
+
+            <Separator Grid.Row="1" 
+                   Background="Black" 
+                   Height="2" 
+                   Margin="0,0,30,12"/>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" FontSize="20" MaxWidth="400" Margin="10,0,20,10" 
+                       TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    Дорогие читатели!<LineBreak/>
+                    Приглашаем вас посетить фирменный магазин издательства «ЕkatBook» в Екатеринбурге.<LineBreak/>
+                    <LineBreak/>
+                    Для вас представлен широкий ассортимент книг по бизнес-литературе, компьютерной литературе, науке и образованию, публицистике и истории, медицинской литературе, психологической литературе, юридической литературе, а также по искусству и художественной литературе.<LineBreak/>
+                    <LineBreak/>
+                    Цены вас приятно удивят.<LineBreak/>
+                    <LineBreak/>
+                    Наш адрес: г. Екатеринбург, Крауля 74<LineBreak/>
+                    Телефон: (812) 500-33-77<LineBreak/>
+                    Режим работы: ежедневно с 10:00 до 18:00, кроме субботы и воскресенья.<LineBreak/>
+                    <LineBreak/>
+                    Ждем вас!<LineBreak/>
+                </TextBlock>
+
+                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0.5" Margin="-5,0,5,5" 
+                       CornerRadius="5" Width="550" Height="540" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <gmaps:GMapControl x:Name="mapControl"
+                                   MouseWheelZoomEnabled="True" 
+                                   PreviewMouseWheel="MapControl_PreviewMouseWheel"/>
+                </Border>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Page>

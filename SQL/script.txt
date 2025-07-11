@@ -1,0 +1,1078 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 14.9
+-- Dumped by pg_dump version 14.9
+
+-- Started on 2025-06-27 08:07:54
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- TOC entry 209 (class 1259 OID 50228)
+-- Name: author; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.author (
+    id_author integer NOT NULL,
+    name character varying(255) NOT NULL,
+    bio character varying(2000),
+    photo character varying(255),
+    birth_date date
+);
+
+
+ALTER TABLE public.author OWNER TO postgres;
+
+--
+-- TOC entry 215 (class 1259 OID 50273)
+-- Name: book; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.book (
+    id_book integer NOT NULL,
+    title character varying(255) NOT NULL,
+    price numeric(10,2) NOT NULL,
+    publication_date date,
+    isbn character varying(13),
+    description character varying(2000),
+    cover_image character varying(255),
+    quantity_books integer DEFAULT 0,
+    id_author integer,
+    id_category integer,
+    CONSTRAINT book_price_check CHECK ((price > (0)::numeric)),
+    CONSTRAINT book_quantity_books_check CHECK ((quantity_books >= 0))
+);
+
+
+ALTER TABLE public.book OWNER TO postgres;
+
+--
+-- TOC entry 218 (class 1259 OID 50318)
+-- Name: book_trend; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.book_trend (
+    id_book_trend integer NOT NULL,
+    id_book integer,
+    id_trend integer
+);
+
+
+ALTER TABLE public.book_trend OWNER TO postgres;
+
+--
+-- TOC entry 228 (class 1259 OID 59500)
+-- Name: book_trend_id_book_trend_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+ALTER TABLE public.book_trend ALTER COLUMN id_book_trend ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME public.book_trend_id_book_trend_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
+-- TOC entry 219 (class 1259 OID 50333)
+-- Name: cart; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.cart (
+    id_cart integer NOT NULL,
+    id_user integer
+);
+
+
+ALTER TABLE public.cart OWNER TO postgres;
+
+--
+-- TOC entry 220 (class 1259 OID 50343)
+-- Name: cart_item; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.cart_item (
+    id_cart_elements integer NOT NULL,
+    id_cart integer,
+    id_book integer,
+    quantity_goods integer,
+    CONSTRAINT cart_item_quantity_goods_check CHECK ((quantity_goods > 0))
+);
+
+
+ALTER TABLE public.cart_item OWNER TO postgres;
+
+--
+-- TOC entry 210 (class 1259 OID 50235)
+-- Name: category; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.category (
+    id_category integer NOT NULL,
+    name character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.category OWNER TO postgres;
+
+--
+-- TOC entry 222 (class 1259 OID 50380)
+-- Name: order_item; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.order_item (
+    id_order_item integer NOT NULL,
+    id_order integer,
+    id_book integer,
+    quantity_goods_unique integer,
+    total_price numeric(10,2),
+    CONSTRAINT order_item_quantity_goods_unique_check CHECK ((quantity_goods_unique > 0)),
+    CONSTRAINT order_item_total_price_check CHECK ((total_price > (0)::numeric))
+);
+
+
+ALTER TABLE public.order_item OWNER TO postgres;
+
+--
+-- TOC entry 225 (class 1259 OID 59419)
+-- Name: order_item_id_order_item_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+ALTER TABLE public.order_item ALTER COLUMN id_order_item ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME public.order_item_id_order_item_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
+-- TOC entry 213 (class 1259 OID 50263)
+-- Name: order_status; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.order_status (
+    id_status integer NOT NULL,
+    status character varying(255)
+);
+
+
+ALTER TABLE public.order_status OWNER TO postgres;
+
+--
+-- TOC entry 221 (class 1259 OID 50359)
+-- Name: orderbook; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.orderbook (
+    id_order integer NOT NULL,
+    order_date date,
+    total_price numeric(10,2),
+    id_user integer,
+    id_status integer,
+    id_payment integer,
+    delivery_address character varying(255),
+    delivery_method character varying(50),
+    CONSTRAINT orderbook_total_price_check CHECK ((total_price > (0)::numeric))
+);
+
+
+ALTER TABLE public.orderbook OWNER TO postgres;
+
+--
+-- TOC entry 224 (class 1259 OID 59418)
+-- Name: orderbook_id_order_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+ALTER TABLE public.orderbook ALTER COLUMN id_order ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME public.orderbook_id_order_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
+-- TOC entry 227 (class 1259 OID 59422)
+-- Name: payment_id_payment_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.payment_id_payment_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.payment_id_payment_seq OWNER TO postgres;
+
+--
+-- TOC entry 214 (class 1259 OID 50268)
+-- Name: payment; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment (
+    id_payment integer DEFAULT nextval('public.payment_id_payment_seq'::regclass) NOT NULL,
+    choice_payment character varying(255),
+    payment_date timestamp without time zone
+);
+
+
+ALTER TABLE public.payment OWNER TO postgres;
+
+--
+-- TOC entry 226 (class 1259 OID 59420)
+-- Name: payment_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.payment_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.payment_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 216 (class 1259 OID 50295)
+-- Name: review; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.review (
+    id_review integer NOT NULL,
+    rating integer,
+    review_text character varying(2000),
+    created_at timestamp without time zone,
+    id_book integer,
+    id_user integer,
+    CONSTRAINT review_rating_check CHECK (((rating >= 1) AND (rating <= 10)))
+);
+
+
+ALTER TABLE public.review OWNER TO postgres;
+
+--
+-- TOC entry 211 (class 1259 OID 50240)
+-- Name: role; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.role (
+    id_role integer NOT NULL,
+    name_role character varying(255)
+);
+
+
+ALTER TABLE public.role OWNER TO postgres;
+
+--
+-- TOC entry 217 (class 1259 OID 50313)
+-- Name: trend; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.trend (
+    id_trend integer NOT NULL,
+    name character varying(255)
+);
+
+
+ALTER TABLE public.trend OWNER TO postgres;
+
+--
+-- TOC entry 212 (class 1259 OID 50245)
+-- Name: userwpf; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.userwpf (
+    login character varying(25),
+    email character varying(255),
+    password_hash character varying(255),
+    created_at date,
+    name character varying(255),
+    number_phone character varying(25),
+    id_role integer,
+    id_user integer NOT NULL
+);
+
+
+ALTER TABLE public.userwpf OWNER TO postgres;
+
+--
+-- TOC entry 223 (class 1259 OID 50435)
+-- Name: userwpf_id_user_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.userwpf_id_user_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.userwpf_id_user_seq OWNER TO postgres;
+
+--
+-- TOC entry 3446 (class 0 OID 0)
+-- Dependencies: 223
+-- Name: userwpf_id_user_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.userwpf_id_user_seq OWNED BY public.userwpf.id_user;
+
+
+--
+-- TOC entry 3221 (class 2604 OID 50436)
+-- Name: userwpf id_user; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.userwpf ALTER COLUMN id_user SET DEFAULT nextval('public.userwpf_id_user_seq'::regclass);
+
+
+--
+-- TOC entry 3421 (class 0 OID 50228)
+-- Dependencies: 209
+-- Data for Name: author; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.author (id_author, name, bio, photo, birth_date) FROM stdin;
+1	Роберт Кийосаки	Американский предприниматель,бизнесмен	755843560629133.jpg	1974-06-21
+4	Родичев Ю. А.	доцент кафедры безопасности информационных систем Самарского национального исследовательского университета имени академика С. П. Королева.	AuthorInfoSec.jpg	1967-05-07
+3	Скрябин Родион	Как сделать крутое бренд-медиа.	bkx2ebqd.jpg	1999-12-23
+5	Негус К.	Специалист по linux с 20-x стажем и известный эксперт и автор бестселлеров делает акцент на инструментах командной строки.	AuthorHeryc.jpg	1973-07-16
+14	Иван Якобий	Иван Павлович Якобий, историк, общественный деятель, журналист, в 1938 году выпустил книгу, которая произвела резонанс в эмигрантской среде - «Николай II и революция». Все средства, полученные от ее продажи, автор передал на строительство храма памяти царя-мученика в Брюсселе.	Ikob.jpg	1960-07-13
+15	Лев Никола́евич Толсто́й	один из наиболее известных русских писателей и мыслителей, один из величайших в мире писателей‑романистов.	Lion.jpg	1828-09-09
+8	Кэрролл Шон	Американский космолог, специализирующийся на тёмной энергии и общей теории относительности..	Authorkaron.jpg	1970-03-10
+9	Лебедев М. А.	Доктор биологических наук. МГУ имени М.В. Ломоносова Кафедра математического анализа.	AuthorLebedev.jpg	1962-11-21
+10	Николенко С. И.	Учёный, преподаватель и практик в области машинного обучения и информатики в целом.	AuthorNukolenko.jpg	1988-08-08
+18	Морозова Людмила Александровна	советский и российский учёный-правовед, доктор юридических наук	moroz.jpg	1933-12-28
+19	Джоан Роулинг	британская писательница, сценаристка и кинопродюсер, наиболее известная как автор серии романов о Гарри Поттере	J._K._Rowling.jpg.jpg	1965-07-31
+20	Эрне́ст Ми́ллер Хемингуэ́й	американский писатель, военный корреспондент, лауреат Нобелевской премии,по литературе 1954 года. 	hemingway.jpg	1899-07-21
+2	Наполеон Хилл	Американский писатель, автор бестселлера "Думай и богатей"	importedImage108652_header.jpg	1967-09-05
+6	Прайс М.	Опытный преподаватель Марк Прайс дает все необходимое для разработки приложений на C#.	1994ac4df4dcf83db5643905366db.jpg	1984-07-02
+7	Резунков А. Г.	Доктор философии в области социальной психологии.Выпускник физического факультета Ленинградского государственного университета (кафедра биофизики).	brandMedia.jpg.jpg	1969-07-02
+11	Чалдини Р.	"Профессор университета штата Аризона, возглавляет отделение психологии."	large_A19985.jpg	1962-03-21
+12	Richu de Xiaotaiyang	"Автор иллюстраций для оригинального издания романа Мосян Тунсю «Благословение небожителей»."	NZrNMwMsqbk.jpg	1924-12-11
+13	Анисимов Евгений Викторович	советский и российский историк. Доктор исторических наук, профессор, главный научный сотрудник Санкт-Петербургского института истории РАН	EvgAni.jpg	1947-10-03
+16	Фёдор Миха́йлович Достое́вский	русский писатель, мыслитель, философ и публицист.	FedorDost.jpg	1821-11-11
+17	Мамонтов В. Д.	Благодаря своему большому научно-практическому опыту Виктор Мамонтов предложил набор несложных физических упражнений на каждый день для профилактики и устранения различных болезненных состояний без применения лекарств\r\n	mamontov.jpg	1960-08-18
+\.
+
+
+--
+-- TOC entry 3427 (class 0 OID 50273)
+-- Dependencies: 215
+-- Data for Name: book; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.book (id_book, title, price, publication_date, isbn, description, cover_image, quantity_books, id_author, id_category) FROM stdin;
+1	Богатый папа, бедный папа	750.00	1997-04-01	9781612680194	Книга о финансовом образовании и управлении личными финансами.	richDad.jpg	1995	1	1
+8	Вселенная. Происхождение жизни.	1100.00	2021-03-04	9121585924337	Принципы революций от Дарвина до Эйнштейна.	universeLife.jpg	1991	8	3
+3	Как сделать крутое бренд-медиа	1850.00	2023-10-01	9780671027032	Книга научит делать блоги и бренд-медиа.	brandMedia.jpg	1998	3	1
+9	Забытые гробницы. Тайны некрополя	900.00	2011-11-11	9530623027032	Описание цивилизаций фараонов и их забытых гробниц.	pharaonGrob.jpg	1992	9	3
+15	Император Николай II и революция	660.00	2024-06-22	226166420	Крах Российской империи	ImpTwo.jpg	1995	14	4
+18	Теория государства и права. Учебник	3200.00	2024-07-11	978-5-91768	Основы государства и права	100031053385b0.jpg	1998	18	7
+21	Стари́к и мо́ре	899.00	2020-02-13	534534634	Старик живёт в маленьком рыбачьем посёлке и рыбачит совсем один.	1004795474.jpg	1999	20	8
+4	Информационная безопасность-стандарты РФ	2750.00	2022-04-01	9721612680194	300 документов информационной безопасности	infoSec.jpg	1993	4	2
+7	Славянские боги в русском языке	975.00	2012-04-01	9234512680194	Подробное описание древних славянских богов.	slavanGods.jpg	1994	7	3
+2	Думай и богатей	1320.00	1937-08-01	9781585424337	Классическая книга о достижении успеха и богатства.	thinkRich.jpg	1989	2	1
+12	Рисуем персонажей маньхуа акварелью	1120.00	2026-11-11	9530623021232	Древнее искусство, история которого берет свое начало в Китае.	manhuaAqua.jpg	1996	12	3
+13	как стать миллионером	10000.00	2020-08-22	8665533	книга о деньгах	millioner.jpg	1999	1	1
+6	C# 9 и .NET 5. Разработка	1250.00	2025-10-09	9530671027032	C# 9 и .NET 5 для ПО	cisharpPrice.jpg	1994	6	2
+10	Машинное обучение: основы	1999.00	2025-02-02	9231212680394	путеводитель по ключевым идеям машинного обучения.	baseML.jpg	1993	10	2
+11	Психология влияния	2300.00	2026-01-01	9121105924337	как убеждать, воздействовать, оказывать влияние.	psychoInter.jpg	1998	11	6
+5	Библия Linux. 10-е издание	2320.00	2020-05-01	9781585924337	Полностью обновленное 10-е издание «Библии Linux»	linuxBible.jpg	1995	5	2
+19	Война и мир	1200.00	2024-08-10	654636435643	О жизни и смерти, о любви и чести, о мужестве и героизме.	Lion.jpg	1997	15	8
+14	Императорская Россия	1277.00	2022-01-01	211426006	 содержит полную информацию по истории Российской империи	ImpRuss.jpg	1999	13	4
+16	Преступление и наказание	1350.00	2025-02-20	978538902	социально-психологический и социально-философский роман	CrimePunish.jpg	1997	16	8
+17	Как сохранить здоровье.	549.00	2023-06-30	9785446142996	 упражнение для себя и управлением  стрессом	44614299.jpg	1998	17	5
+20	 Гарри Поттер и философский камень	1250.00	2005-08-12	98765234567	История 11-летнего волшебника, который учится в школе Хогвартс	6018798005.jpg	2000	19	8
+\.
+
+
+--
+-- TOC entry 3430 (class 0 OID 50318)
+-- Dependencies: 218
+-- Data for Name: book_trend; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.book_trend (id_book_trend, id_book, id_trend) FROM stdin;
+1	1	2
+2	2	2
+3	3	1
+4	4	1
+5	5	2
+6	6	3
+8	10	1
+9	12	3
+12	15	2
+14	16	4
+17	13	2
+23	17	4
+24	11	3
+29	19	5
+30	20	6
+32	18	6
+34	21	7
+\.
+
+
+--
+-- TOC entry 3431 (class 0 OID 50333)
+-- Dependencies: 219
+-- Data for Name: cart; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.cart (id_cart, id_user) FROM stdin;
+1	1
+2	2
+3	7
+4	8
+5	10
+6	11
+7	12
+8	15
+9	16
+10	17
+11	20
+\.
+
+
+--
+-- TOC entry 3432 (class 0 OID 50343)
+-- Dependencies: 220
+-- Data for Name: cart_item; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.cart_item (id_cart_elements, id_cart, id_book, quantity_goods) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3422 (class 0 OID 50235)
+-- Dependencies: 210
+-- Data for Name: category; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.category (id_category, name) FROM stdin;
+1	Бизнес-литература
+2	Компьютерная литература
+3	Наука и образование
+4	Публицистика и история
+5	Медицинская литература
+6	Психологическая литература
+7	Юридическая литература
+8	Художественная литература
+\.
+
+
+--
+-- TOC entry 3434 (class 0 OID 50380)
+-- Dependencies: 222
+-- Data for Name: order_item; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.order_item (id_order_item, id_order, id_book, quantity_goods_unique, total_price) FROM stdin;
+1	1	1	1	750.00
+2	1	10	2	3998.00
+3	2	6	5	6250.00
+4	3	11	2	1120.00
+5	4	4	2	5500.00
+6	5	7	3	2925.00
+7	6	9	2	1800.00
+8	7	2	1	1320.00
+9	8	2	1	1320.00
+10	9	7	2	1950.00
+11	10	1	1	750.00
+12	11	1	1	750.00
+13	12	1	1	750.00
+14	13	1	1	750.00
+15	14	1	1	750.00
+16	15	1	1	750.00
+17	16	1	1	750.00
+18	17	1	1	750.00
+19	18	1	1	750.00
+20	19	1	1	750.00
+21	20	13	1	10000.00
+22	21	2	2	2640.00
+23	23	12	2	2240.00
+24	24	9	2	1800.00
+25	25	8	2	2200.00
+26	26	15	1	660.00
+27	27	6	1	1250.00
+28	28	3	2	3700.00
+29	29	14	1	1277.00
+30	30	9	1	900.00
+31	31	16	3	4050.00
+32	32	15	4	2640.00
+33	33	10	2	3998.00
+34	34	5	2	4640.00
+35	35	19	3	3600.00
+36	36	17	2	1098.00
+37	37	21	1	899.00
+38	38	18	2	6400.00
+39	39	4	2	5500.00
+\.
+
+
+--
+-- TOC entry 3425 (class 0 OID 50263)
+-- Dependencies: 213
+-- Data for Name: order_status; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.order_status (id_status, status) FROM stdin;
+1	Новый
+2	В обработке
+3	Оплачен
+4	Отправлен
+5	Доставлен
+6	Отменен
+\.
+
+
+--
+-- TOC entry 3433 (class 0 OID 50359)
+-- Dependencies: 221
+-- Data for Name: orderbook; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.orderbook (id_order, order_date, total_price, id_user, id_status, id_payment, delivery_address, delivery_method) FROM stdin;
+4	2025-06-21	5500.00	12	1	4	ватутина	Почта России
+1	2025-06-20	4748.00	12	4	1	ddd	Почта России
+2	2025-06-20	6250.00	12	5	2	ural	Самовывоз
+3	2025-06-20	1120.00	12	6	3	fork	Курьер
+5	2025-06-21	2925.00	12	6	5	крауля	Почта России
+6	2025-06-23	1800.00	16	6	6	Екатеринбург.Крауля	Почта России
+7	2025-06-23	1320.00	17	6	7	Екатеринбург,крауля 74	Почта России
+8	2025-06-23	1320.00	17	6	8	Екатеринбург,крауля 74	Почта России
+9	2025-06-26	1950.00	17	1	9	плотинка	Курьер
+13	2025-06-26	750.00	17	6	13	плотинка	Курьер
+10	2025-06-26	750.00	17	6	10	плотинка	Курьер
+12	2025-06-26	750.00	17	6	12	плотинка	Курьер
+15	2025-06-26	750.00	17	6	15	плотинка	Курьер
+14	2025-06-26	750.00	17	6	14	плотинка	Курьер
+19	2025-06-26	750.00	17	6	19	плотинка	Курьер
+11	2025-06-26	750.00	17	6	11	плотинка	Курьер
+16	2025-06-26	750.00	17	6	16	плотинка	Курьер
+17	2025-06-26	750.00	17	6	17	плотинка	Курьер
+18	2025-06-26	750.00	17	6	18	плотинка	Курьер
+20	2025-06-26	10000.00	17	6	20	крауля	Почта России
+21	2025-06-26	2640.00	17	6	21	луна	Почта России
+23	2025-06-26	2240.00	17	6	23	Ленина	Почта России
+24	2025-06-26	1800.00	17	6	24	луначарского	Курьер
+25	2025-06-26	2200.00	17	1	25	татищева	Курьер
+26	2025-06-26	660.00	17	6	26	левое	Самовывоз
+27	2025-06-26	1250.00	17	1	27	ооо	Почта России
+28	2025-06-26	3700.00	17	1	28	пушкина	Почта России
+29	2025-06-26	1277.00	17	6	29	толмачева	Самовывоз
+30	2025-06-26	900.00	17	1	30	истинный	Самовывоз
+31	2025-06-26	4050.00	17	1	31	солнечная	Курьер
+32	2025-06-26	2640.00	20	1	32	терминаторская	Почта России
+33	2025-06-26	3998.00	20	6	33	лунатерминатор	Курьер
+34	2025-06-26	4640.00	17	1	34	iio	Почта России
+35	2025-06-26	3600.00	17	1	35	vvv	Курьер
+36	2025-06-26	1098.00	17	1	36	cobro	Курьер
+37	2025-06-26	899.00	17	1	37	bbb	Курьер
+38	2025-06-26	6400.00	20	1	38	ggg	Курьер
+39	2025-06-26	5500.00	20	6	39	yola	Курьер
+\.
+
+
+--
+-- TOC entry 3426 (class 0 OID 50268)
+-- Dependencies: 214
+-- Data for Name: payment; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.payment (id_payment, choice_payment, payment_date) FROM stdin;
+1	Электронный кошелек	2025-06-20 13:03:14.258284
+2	Банковская карта	2025-06-20 13:10:28.024387
+3	Наличные при получении	2025-06-20 13:15:23.889293
+4	Электронный кошелек	2025-06-21 18:47:53.114798
+5	Наличные при получении	2025-06-21 20:38:59.175557
+6	Наличные при получении	2025-06-23 08:53:22.978819
+7	Наличные при получении	2025-06-23 11:23:52.403049
+8	Наличные при получении	2025-06-23 11:23:56.934854
+9	Электронный кошелек	2025-06-26 11:09:42.883583
+10	Наличные при получении	2025-06-26 11:13:11.606798
+11	Наличные при получении	2025-06-26 11:13:13.278731
+12	Наличные при получении	2025-06-26 11:13:18.358257
+13	Наличные при получении	2025-06-26 11:13:18.512089
+14	Наличные при получении	2025-06-26 11:13:18.675087
+15	Наличные при получении	2025-06-26 11:13:18.835306
+16	Наличные при получении	2025-06-26 11:13:19.015038
+17	Наличные при получении	2025-06-26 11:13:19.187444
+18	Наличные при получении	2025-06-26 11:13:19.339134
+19	Наличные при получении	2025-06-26 11:13:19.523734
+20	Электронный кошелек	2025-06-26 11:15:12.83187
+21	Наличные при получении	2025-06-26 11:17:20.584274
+23	Наличные при получении	2025-06-26 11:22:36.573747
+24	Наличные при получении	2025-06-26 11:24:44.509663
+25	Наличные при получении	2025-06-26 11:32:43.738739
+26	Наличные при получении	2025-06-26 11:36:30.966093
+27	Наличные при получении	2025-06-26 11:47:24.748479
+28	Наличные при получении	2025-06-26 11:52:12.325429
+29	Электронный кошелек	2025-06-26 14:23:04.466385
+30	Электронный кошелек	2025-06-26 14:50:00.086607
+31	Банковская карта	2025-06-26 14:54:03.241663
+32	Наличные при получении	2025-06-26 14:57:44.796893
+33	Наличные при получении	2025-06-26 14:59:04.58122
+34	Наличные при получении	2025-06-26 20:35:18.203955
+35	Банковская карта	2025-06-26 20:36:40.582668
+36	Наличные при получении	2025-06-26 20:37:52.110862
+37	Электронный кошелек	2025-06-26 20:56:58.884578
+38	Наличные при получении	2025-06-26 21:17:31.762764
+39	Банковская карта	2025-06-26 21:18:24.503528
+\.
+
+
+--
+-- TOC entry 3428 (class 0 OID 50295)
+-- Dependencies: 216
+-- Data for Name: review; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.review (id_review, rating, review_text, created_at, id_book, id_user) FROM stdin;
+1	4	великолепный справочник!!!	2025-06-27 06:25:02.274948	5	20
+2	5	крутая книжка!!!!!!\r\nя стал сис.админом)	2025-06-27 06:43:08.813446	5	17
+3	1	я не стал миллионером!!!!!\r\nВЕРНИТЕ МОИ ДЕНЬГИ!!!!!!!!!!!!!!!!!!!	2025-06-27 06:43:51.229338	13	17
+4	5	Книга изменила мою жизнь!!!!	2025-06-27 06:52:34.938198	13	20
+\.
+
+
+--
+-- TOC entry 3423 (class 0 OID 50240)
+-- Dependencies: 211
+-- Data for Name: role; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.role (id_role, name_role) FROM stdin;
+1	Пользователь
+2	Менеджер
+\.
+
+
+--
+-- TOC entry 3429 (class 0 OID 50313)
+-- Dependencies: 217
+-- Data for Name: trend; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.trend (id_trend, name) FROM stdin;
+1	Новинки
+2	Бестселлеры
+3	Скоро
+4	Рекомендуем
+5	Экранизация
+7	Нобелевская премия
+6	Топ 10
+\.
+
+
+--
+-- TOC entry 3424 (class 0 OID 50245)
+-- Dependencies: 212
+-- Data for Name: userwpf; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.userwpf (login, email, password_hash, created_at, name, number_phone, id_role, id_user) FROM stdin;
+nikita	nikita@gmail.com	5b4052e49b0403a929d47c0beec8da684bd815971a93683d2c25bf5ffb24ed7a	2025-06-18	\N	\N	1	1
+liza888	liza@gmail.com	fc23acbc7f1e3e276efee862ac7453d5041e2543b0d6a37793663b545c37879b	2025-06-18	\N	\N	1	5
+manager	manager@gmail.com	11d1e45ef18a489765f260e3a44756f85caaebfdfe81a6749a75489efe6f08ed	2025-06-18	\N	\N	2	2
+yola777	yola@gmail.com	ef1369f69bf3e255f8945eff08645aae4b56252c0ace4d1b36311ba61795d069	2025-06-18	\N	\N	1	7
+holy555	holy@gmail.com	ee326c296c82eb43b56f8b9595af6d0481de9439ddb55f9d039f229a76575ee4	2025-06-18	\N	\N	1	8
+vica111	vica@gmail.com	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	2025-06-18	\N	\N	1	9
+georg999	georg@gmail.com	9864e0364394511f0d7ed984e96f0c636d65735a8ad96f3526696074ecdf1b24	2025-06-18	georg9	444	1	11
+ivan777	ivan@gmail.com	efe1f5b8b9af5027a77bc23879805e8a2a6dc10ed1a0111be3d6c6fcd618a51a	2025-06-18	иван	222-222	1	10
+kostya	kostya@gmail.com	67b1959e03073ea85a0ac5f64938ef567609a38778a268b51632ce58a840821d	2025-06-19	kostya	777-777	1	12
+pavel	pavel@gmail.com	e011f63b5b672a8b6c5268afe1fee901ce47bf2a3d189a64e2be9de0434b22e3	2025-06-20	пашкановый	44-44-44	1	13
+funny15	funny15@gmail.com	e011f63b5b672a8b6c5268afe1fee901ce47bf2a3d189a64e2be9de0434b22e3	2025-06-21	fun	999-000	1	15
+ivan333	ivan333@gmail.com	7b62f33f6722f77b54b235edfbdba31c4ea69670ac37989aec44d7df9c06f64d	2025-06-22	ivan	333-777	1	16
+TestRembo	TestRembo@gmail.com	7cba5951d28acef4eb2fa85391c61918f5a5b3c022a6696df94d79a8da352bf7	2025-06-26			1	19
+sveta555	sveta@gmail.com	24eddca45c3b77ba61385970c956f88575662725046d6e76e400b8a8d65110bb	2025-06-23	светка	123-445	1	17
+term000	term@gmail.com	c26d01096da2b0fac8133862ded569ba2d83109ed6e0d0264a3da870e42e88da	2025-06-26	terminator	000-000	1	20
+\.
+
+
+--
+-- TOC entry 3447 (class 0 OID 0)
+-- Dependencies: 228
+-- Name: book_trend_id_book_trend_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.book_trend_id_book_trend_seq', 34, true);
+
+
+--
+-- TOC entry 3448 (class 0 OID 0)
+-- Dependencies: 225
+-- Name: order_item_id_order_item_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.order_item_id_order_item_seq', 39, true);
+
+
+--
+-- TOC entry 3449 (class 0 OID 0)
+-- Dependencies: 224
+-- Name: orderbook_id_order_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.orderbook_id_order_seq', 39, true);
+
+
+--
+-- TOC entry 3450 (class 0 OID 0)
+-- Dependencies: 227
+-- Name: payment_id_payment_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.payment_id_payment_seq', 39, true);
+
+
+--
+-- TOC entry 3451 (class 0 OID 0)
+-- Dependencies: 226
+-- Name: payment_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.payment_id_seq', 1, false);
+
+
+--
+-- TOC entry 3452 (class 0 OID 0)
+-- Dependencies: 223
+-- Name: userwpf_id_user_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.userwpf_id_user_seq', 20, true);
+
+
+--
+-- TOC entry 3232 (class 2606 OID 50234)
+-- Name: author author_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.author
+    ADD CONSTRAINT author_pkey PRIMARY KEY (id_author);
+
+
+--
+-- TOC entry 3250 (class 2606 OID 50284)
+-- Name: book book_isbn_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.book
+    ADD CONSTRAINT book_isbn_key UNIQUE (isbn);
+
+
+--
+-- TOC entry 3252 (class 2606 OID 50282)
+-- Name: book book_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.book
+    ADD CONSTRAINT book_pkey PRIMARY KEY (id_book);
+
+
+--
+-- TOC entry 3258 (class 2606 OID 50322)
+-- Name: book_trend book_trend_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.book_trend
+    ADD CONSTRAINT book_trend_pkey PRIMARY KEY (id_book_trend);
+
+
+--
+-- TOC entry 3262 (class 2606 OID 50348)
+-- Name: cart_item cart_item_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.cart_item
+    ADD CONSTRAINT cart_item_pkey PRIMARY KEY (id_cart_elements);
+
+
+--
+-- TOC entry 3260 (class 2606 OID 50337)
+-- Name: cart cart_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.cart
+    ADD CONSTRAINT cart_pkey PRIMARY KEY (id_cart);
+
+
+--
+-- TOC entry 3234 (class 2606 OID 50239)
+-- Name: category category_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.category
+    ADD CONSTRAINT category_pkey PRIMARY KEY (id_category);
+
+
+--
+-- TOC entry 3266 (class 2606 OID 50386)
+-- Name: order_item order_item_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.order_item
+    ADD CONSTRAINT order_item_pkey PRIMARY KEY (id_order_item);
+
+
+--
+-- TOC entry 3246 (class 2606 OID 50267)
+-- Name: order_status order_status_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.order_status
+    ADD CONSTRAINT order_status_pkey PRIMARY KEY (id_status);
+
+
+--
+-- TOC entry 3264 (class 2606 OID 50364)
+-- Name: orderbook orderbook_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.orderbook
+    ADD CONSTRAINT orderbook_pkey PRIMARY KEY (id_order);
+
+
+--
+-- TOC entry 3248 (class 2606 OID 50272)
+-- Name: payment payment_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment
+    ADD CONSTRAINT payment_pkey PRIMARY KEY (id_payment);
+
+
+--
+-- TOC entry 3254 (class 2606 OID 50302)
+-- Name: review review_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.review
+    ADD CONSTRAINT review_pkey PRIMARY KEY (id_review);
+
+
+--
+-- TOC entry 3236 (class 2606 OID 50244)
+-- Name: role role_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.role
+    ADD CONSTRAINT role_pkey PRIMARY KEY (id_role);
+
+
+--
+-- TOC entry 3256 (class 2606 OID 50317)
+-- Name: trend trend_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.trend
+    ADD CONSTRAINT trend_pkey PRIMARY KEY (id_trend);
+
+
+--
+-- TOC entry 3238 (class 2606 OID 50255)
+-- Name: userwpf userwpf_email_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.userwpf
+    ADD CONSTRAINT userwpf_email_key UNIQUE (email);
+
+
+--
+-- TOC entry 3240 (class 2606 OID 50253)
+-- Name: userwpf userwpf_login_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.userwpf
+    ADD CONSTRAINT userwpf_login_key UNIQUE (login);
+
+
+--
+-- TOC entry 3242 (class 2606 OID 50257)
+-- Name: userwpf userwpf_number_phone_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.userwpf
+    ADD CONSTRAINT userwpf_number_phone_key UNIQUE (number_phone);
+
+
+--
+-- TOC entry 3244 (class 2606 OID 50438)
+-- Name: userwpf userwpf_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.userwpf
+    ADD CONSTRAINT userwpf_pkey PRIMARY KEY (id_user);
+
+
+--
+-- TOC entry 3268 (class 2606 OID 50285)
+-- Name: book book_id_author_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.book
+    ADD CONSTRAINT book_id_author_fkey FOREIGN KEY (id_author) REFERENCES public.author(id_author) ON DELETE SET NULL;
+
+
+--
+-- TOC entry 3269 (class 2606 OID 50290)
+-- Name: book book_id_category_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.book
+    ADD CONSTRAINT book_id_category_fkey FOREIGN KEY (id_category) REFERENCES public.category(id_category) ON DELETE SET NULL;
+
+
+--
+-- TOC entry 3272 (class 2606 OID 50323)
+-- Name: book_trend book_trend_id_book_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.book_trend
+    ADD CONSTRAINT book_trend_id_book_fkey FOREIGN KEY (id_book) REFERENCES public.book(id_book) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 3273 (class 2606 OID 50328)
+-- Name: book_trend book_trend_id_trend_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.book_trend
+    ADD CONSTRAINT book_trend_id_trend_fkey FOREIGN KEY (id_trend) REFERENCES public.trend(id_trend) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 3274 (class 2606 OID 50453)
+-- Name: cart cart_id_user_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.cart
+    ADD CONSTRAINT cart_id_user_fkey FOREIGN KEY (id_user) REFERENCES public.userwpf(id_user) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 3276 (class 2606 OID 50354)
+-- Name: cart_item cart_item_id_book_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.cart_item
+    ADD CONSTRAINT cart_item_id_book_fkey FOREIGN KEY (id_book) REFERENCES public.book(id_book) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 3275 (class 2606 OID 50349)
+-- Name: cart_item cart_item_id_cart_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.cart_item
+    ADD CONSTRAINT cart_item_id_cart_fkey FOREIGN KEY (id_cart) REFERENCES public.cart(id_cart) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 3281 (class 2606 OID 50392)
+-- Name: order_item order_item_id_book_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.order_item
+    ADD CONSTRAINT order_item_id_book_fkey FOREIGN KEY (id_book) REFERENCES public.book(id_book) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 3280 (class 2606 OID 50387)
+-- Name: order_item order_item_id_order_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.order_item
+    ADD CONSTRAINT order_item_id_order_fkey FOREIGN KEY (id_order) REFERENCES public.orderbook(id_order) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 3278 (class 2606 OID 50375)
+-- Name: orderbook orderbook_id_payment_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.orderbook
+    ADD CONSTRAINT orderbook_id_payment_fkey FOREIGN KEY (id_payment) REFERENCES public.payment(id_payment) ON DELETE SET NULL;
+
+
+--
+-- TOC entry 3277 (class 2606 OID 50370)
+-- Name: orderbook orderbook_id_status_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.orderbook
+    ADD CONSTRAINT orderbook_id_status_fkey FOREIGN KEY (id_status) REFERENCES public.order_status(id_status) ON DELETE SET NULL;
+
+
+--
+-- TOC entry 3279 (class 2606 OID 50458)
+-- Name: orderbook orderbook_id_user_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.orderbook
+    ADD CONSTRAINT orderbook_id_user_fkey FOREIGN KEY (id_user) REFERENCES public.userwpf(id_user) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 3270 (class 2606 OID 50303)
+-- Name: review review_id_book_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.review
+    ADD CONSTRAINT review_id_book_fkey FOREIGN KEY (id_book) REFERENCES public.book(id_book) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 3271 (class 2606 OID 50448)
+-- Name: review review_id_user_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.review
+    ADD CONSTRAINT review_id_user_fkey FOREIGN KEY (id_user) REFERENCES public.userwpf(id_user) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 3267 (class 2606 OID 50258)
+-- Name: userwpf userwpf_id_role_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.userwpf
+    ADD CONSTRAINT userwpf_id_role_fkey FOREIGN KEY (id_role) REFERENCES public.role(id_role) ON DELETE SET NULL;
+
+
+-- Completed on 2025-06-27 08:07:55
+
+--
+-- PostgreSQL database dump complete
+--
+

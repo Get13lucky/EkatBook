@@ -1,0 +1,383 @@
+﻿<Window x:Class="EkatBooks.BasketAndProfile.WindowManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EkatBooks.BasketAndProfile"
+        mc:Ignorable="d"
+        Title="Управление данными" Height="700" Width="800"
+        WindowStartupLocation="CenterScreen">
+
+    <TabControl>
+        <!-- Первая вкладка - формы ввода данных -->
+        <TabItem Header="Управление данными" IsSelected="True">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Заголовок -->
+                    <TextBlock Grid.Row="0" 
+                               Text="Управление данными" 
+                               Foreground="RoyalBlue" 
+                               FontSize="30" 
+                               FontWeight="Bold" 
+                               Margin="0,0,0,10"/>
+
+                    <Separator Grid.Row="1" 
+                               Background="RoyalBlue" 
+                               Height="2" 
+                               Margin="0,0,0,15"/>
+
+                    <!-- Форма ввода данных автора -->
+                    <GroupBox Grid.Row="2" Header="Данные автора" Margin="0,10,0,20">
+                        <Grid Margin="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" MinWidth="150"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- ID автора -->
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="ID автора:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="0" Grid.Column="1" x:Name="AuthorIdTextBox" Height="30" Margin="0,5"/>
+                            <Button Grid.Column="1" Content="Найти" Padding="10,0" Margin="5,0,0,0"  MaxWidth="40"  HorizontalAlignment="Right" Click="SearchAuthorButton_Click"/>
+
+
+                            <!-- Имя автора -->
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="Имя:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="1" Grid.Column="1" x:Name="AuthorNameTextBox" Height="30" Margin="0,5"/>
+
+                            <!-- Биография автора -->
+                            <TextBlock Grid.Row="2" Grid.Column="0" Text="Биография:" Margin="0,8,10,8" VerticalAlignment="Top"/>
+                            <TextBox Grid.Row="2" Grid.Column="1" x:Name="AuthorBioTextBox" Height="80" Margin="0,5" 
+                                     AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+
+                            <!-- Фото автора (URL или путь) -->
+                            <TextBlock Grid.Row="6" Grid.Column="0" Text="Обложка (URL):" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="6" Grid.Column="1" x:Name="AuthorPhotoTextBox" Height="0" Margin="0,5"/>
+                            <Button Grid.Row="6" Grid.Column="2" Content="Выбрать фото" MinWidth="40" Margin="5,0,330,0" Padding="10,0" Click="ChooseAuthorCoverButton_Click"/>
+
+                            <!-- Дата рождения -->
+                            <TextBlock Grid.Row="4" Grid.Column="0" Text="Дата рождения:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <DatePicker Grid.Row="4" Grid.Column="1" x:Name="AuthorBirthDatePicker" Height="30" Margin="0,5"/>
+
+                            <!-- Кнопки управления для автора -->
+                            <StackPanel Grid.Row="10" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                                <Button Content="Добавить автора" Padding="15,5" Margin="0,0,10,0" Background="RoyalBlue" Foreground="White" Click="AddAuthorButton_Click"/>
+                                <Button Content="удалить автора" Padding="15,5" Margin="0,0,10,0" Background="RoyalBlue" Foreground="White" Click="DeleteAuthorButton_Click"/>
+                                <Button Content="редактировать автора" Padding="15,5" Margin="0,0,10,0" Background="RoyalBlue" Foreground="White" Click="EditAuthorButton_Click"/>
+                            </StackPanel>
+                        </Grid>
+                    </GroupBox>
+
+                    <!-- Форма ввода данных книги -->
+                    <GroupBox Grid.Row="3" Header="Данные книги" Margin="0,10,0,20">
+                        <Grid Margin="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" MinWidth="150"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- ID книги -->
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="ID книги:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="0" Grid.Column="1" x:Name="BookIdTextBox" Height="30" Margin="0,5"/>
+                            <Button Grid.Column="1" Content="Найти" Padding="10,0" Margin="5,0,0,0" MaxWidth="40"  HorizontalAlignment="Right" Click="SearchBookButton_Click"/>
+
+
+                            <!-- Название книги -->
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="Название:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="1" Grid.Column="1" x:Name="BookTitleTextBox" Height="30" Margin="0,5"/>
+
+                            <!-- Цена книги -->
+                            <TextBlock Grid.Row="2" Grid.Column="0" Text="Цена:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="2" Grid.Column="1" x:Name="BookPriceTextBox" Height="30" Margin="0,5"/>
+
+                            <!-- Дата публикации -->
+                            <TextBlock Grid.Row="3" Grid.Column="0" Text="Дата публикации:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <DatePicker Grid.Row="3" Grid.Column="1" x:Name="BookPublicationDatePicker" Height="30" Margin="0,5"/>
+
+                            <!-- ISBN -->
+                            <TextBlock Grid.Row="4" Grid.Column="0" Text="ISBN:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="4" Grid.Column="1" x:Name="BookIsbnTextBox" Height="30" Margin="0,5"/>
+
+                            <!-- Описание книги -->
+                            <TextBlock Grid.Row="5" Grid.Column="0" Text="Описание:" Margin="0,8,10,8" VerticalAlignment="Top"/>
+                            <TextBox Grid.Row="5" Grid.Column="1" x:Name="BookDescriptionTextBox" Height="80" Margin="0,5" 
+                                     AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+
+                            <!-- Обложка книги (URL или путь) -->
+                            <TextBlock Grid.Row="6" Grid.Column="0" Text="Обложка (URL):" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="6" Grid.Column="1" x:Name="BookCoverImageTextBox" Height="0" Margin="0,5"/>
+                            <Button Grid.Row="6" Grid.Column="2" Content="Выбрать фото"  Margin="5,0,0,0" Padding="10,0" Click="ChooseBookCoverButton_Click"/>
+
+                            <!-- Количество книг -->
+                            <TextBlock Grid.Row="7" Grid.Column="0" Text="Количество:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="7" Grid.Column="1" x:Name="BookQuantityTextBox" Height="30" Margin="0,5"/>
+
+                            <!-- ID автора -->
+                            <TextBlock Grid.Row="8" Grid.Column="0" Text="ID автора:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <Grid Grid.Row="8" Grid.Column="1" Margin="0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Grid.Column="0" x:Name="BookAuthorIdTextBox" Height="30"/>
+                            </Grid>
+
+                            <!-- ID категории -->
+                            <!-- ID категории -->
+                            <TextBlock Grid.Row="9" Grid.Column="0" Text="Категория:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <Grid Grid.Row="9" Grid.Column="1" Margin="0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <ComboBox Grid.Column="0" x:Name="BookCategoryComboBox" Height="30" DisplayMemberPath="name"
+              SelectedValuePath="id_category" SelectedValue="{Binding SelectedCategoryId}"/>
+                            </Grid>
+
+
+                            <!-- ID тренда -->
+                            <TextBlock Grid.Row="10" Grid.Column="0" Text="Тренд:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <Grid Grid.Row="10" Grid.Column="1" Margin="0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <ComboBox Grid.Column="0" x:Name="BookTrendComboBox" Height="30" HorizontalAlignment="Left" MinWidth="700" DisplayMemberPath="name"
+              SelectedValuePath="id_trend" SelectedValue="{Binding SelectedTrendId}"/>
+                            </Grid>
+
+
+
+                            <!-- Кнопки управления для книги -->
+                            <StackPanel Grid.Row="10" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                                <Button Content="Добавить книгу" Padding="15,5" Margin="0,0,10,0" Background="RoyalBlue" Foreground="White" Click="AddBookButton_Click"/>
+                                <Button Content="Редактировать книгу" Padding="15,5" Margin="0,0,10,0" Background="RoyalBlue" Foreground="White" Click="EditBookButton_Click"/>
+                                <Button Content="удалить книгу" Click="DeleteBookButton_Click" Background="RoyalBlue" Foreground="White"  Padding="15,5"/>
+                            </StackPanel>
+
+                            <!-- Добавим после формы для книг -->
+                      
+
+
+
+                        </Grid>
+                    </GroupBox>
+
+                    <GroupBox Grid.Row="4" Header="Данные пользователя" Margin="0,10,0,20">
+                        <Grid Margin="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" MinWidth="150"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- ID пользователя -->
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="ID пользователя:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="0" Grid.Column="1" x:Name="UserIdTextBox" Height="30" Margin="0,5"/>
+
+                            <!-- Логин -->
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="Логин:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="1" Grid.Column="1" x:Name="UserLoginTextBox" Height="30" Margin="0,5"/>
+
+                            <!-- Имя -->
+                            <TextBlock Grid.Row="2" Grid.Column="0" Text="Имя:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="2" Grid.Column="1" x:Name="UserNameTextBox" Height="30" Margin="0,5"/>
+
+                            <!-- Email -->
+                            <TextBlock Grid.Row="3" Grid.Column="0" Text="Email:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="3" Grid.Column="1" x:Name="UserEmailTextBox" Height="30" Margin="0,5"/>
+
+                            <!-- Телефон -->
+                            <TextBlock Grid.Row="4" Grid.Column="0" Text="Телефон:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="4" Grid.Column="1" x:Name="UserPhoneTextBox" Height="30" Margin="0,5"/>
+
+                            <!-- Пароль -->
+                            <TextBlock Grid.Row="5" Grid.Column="0" Text="Пароль:" Margin="0,8,10,8" VerticalAlignment="Center"/>
+                            <PasswordBox Grid.Row="5" Grid.Column="1" x:Name="UserPasswordBox" Height="30" Margin="0,5"/>
+
+                            <!-- ID роли -->
+                          
+                            <Button Content="Найти" Grid.Column="2"  Padding="10,0" MaxWidth="40" Click="SearchUserButton_Click" HorizontalAlignment="Right"/>
+
+                            <!-- Кнопки управления -->
+                            <StackPanel Grid.Row="7" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                                <Button Content="Добавить пользователя" Padding="15,5" Margin="0,0,10,0" Background="RoyalBlue" Foreground="White" Click="AddUserButton_Click"/>
+                                <Button Content="Редактировать" Padding="15,5" Margin="0,0,10,0" Background="RoyalBlue" Foreground="White" Click="EditUserButton_Click"/>
+                                <Button Content="Удалить" Padding="15,5" Background="RoyalBlue" Foreground="White" Click="DeleteUserButton_Click"/>
+                            </StackPanel>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </ScrollViewer>
+        </TabItem>
+
+        <!-- Вторая вкладка - таблица авторов -->
+        <TabItem Header="Список авторов">
+            <Grid>
+                <DataGrid x:Name="AuthorsDataGrid" 
+                          AutoGenerateColumns="False"
+                          CanUserAddRows="False"
+                          IsReadOnly="True"
+                          Margin="10">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding IdAuthor}" Width="Auto"/>
+                        <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="*"/>
+                        <DataGridTextColumn Header="Дата рождения" Binding="{Binding BirthDate, StringFormat={}{0:dd.MM.yyyy}}" Width="Auto"/>
+                        <DataGridTextColumn Header="Биография" Binding="{Binding Bio}" Width="2*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </TabItem>
+
+        <TabItem Header="Список книг">
+            <Grid>
+                <DataGrid x:Name="BooksDataGrid" 
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  IsReadOnly="True"
+                  Margin="10"
+                  Loaded="BooksDataGrid_Loaded">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID книги" Binding="{Binding IdBook}" Width="Auto"/>
+                        <DataGridTextColumn Header="Название" Binding="{Binding Title}" Width="*"/>
+                        <DataGridTextColumn Header="Цена" Binding="{Binding Price, StringFormat={}{0:N2} руб.}" Width="Auto"/>
+                        <DataGridTextColumn Header="ISBN" Binding="{Binding Isbn}" Width="Auto"/>
+                        <DataGridTextColumn Header="Дата публикации" Binding="{Binding PublicationDate, StringFormat={}{0:dd.MM.yyyy}}" Width="Auto"/>
+                        <DataGridTextColumn Header="Количество" Binding="{Binding QuantityBooks}" Width="Auto"/>
+                        <DataGridTextColumn Header="ID автора" Binding="{Binding IdAuthor}" Width="Auto"/>
+                        <DataGridTextColumn Header="ID категории" Binding="{Binding IdCategory}" Width="Auto"/>
+                        <DataGridTextColumn Header="Описание" Binding="{Binding Description}" Width="2*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Список пользователей">
+            <Grid>
+                <DataGrid x:Name="UsersDataGrid" 
+                 AutoGenerateColumns="False"
+                 CanUserAddRows="False"
+                 IsReadOnly="True"
+                 Margin="10"
+                 Loaded="UsersDataGrid_Loaded">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID пользователя" Binding="{Binding IdUser}" Width="Auto"/>
+                        <DataGridTextColumn Header="Логин" Binding="{Binding Login}" Width="*"/>
+                        <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="*"/>
+                        <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
+                        <DataGridTextColumn Header="Телефон" Binding="{Binding NumberPhone}" Width="Auto"/>
+                        <DataGridTextColumn Header="Дата создания" Binding="{Binding CreatedAt, StringFormat={}{0:dd.MM.yyyy}}" Width="Auto"/>
+                        <DataGridTextColumn Header="ID роли" Binding="{Binding IdRole}" Width="Auto"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </TabItem>
+        <!-- Добавить в TabControl после существующих вкладок -->
+        <TabItem Header="Заказы">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <DataGrid x:Name="OrdersDataGrid" 
+                  Grid.Row="0"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  IsReadOnly="True"
+                  Margin="10"
+                  SelectionMode="Single"
+                  SelectionChanged="OrdersDataGrid_SelectionChanged"
+                  Loaded="OrdersDataGrid_Loaded">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID заказа" Binding="{Binding IdOrder}" Width="Auto"/>
+                        <DataGridTextColumn Header="Дата заказа" Binding="{Binding OrderDate, StringFormat={}{0:dd.MM.yyyy}}" Width="Auto"/>
+                        <DataGridTextColumn Header="Адрес доставки" Binding="{Binding DeliveryAddress}" Width="*"/>
+                        <DataGridTextColumn Header="Сумма" Binding="{Binding TotalPrice, StringFormat={}{0:N2} руб.}" Width="Auto"/>
+
+                        <!-- Добавляем колонки с ID -->
+                        <DataGridTextColumn Header="ID пользователя" Binding="{Binding IdUser}" Width="Auto"/>
+                        <DataGridTextColumn Header="ID статуса" Binding="{Binding IdStatus}" Width="Auto"/>
+                        <DataGridTextColumn Header="ID платежа" Binding="{Binding IdPayment}" Width="Auto"/>
+
+                        <!-- Колонки с навигационными свойствами -->
+                     
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+                    <ComboBox x:Name="StatusComboBox" Width="150" Margin="0,0,10,0"/>
+                    <Button Content="Обновить статус" Padding="10,5" Click="UpdateStatusButton_Click"/>
+                </StackPanel>
+            </Grid>
+        </TabItem>
+
+        <!-- В существующем TabControl добавьте эту вкладку после других вкладок -->
+        <TabItem Header="Платежи">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <DataGrid x:Name="PaymentsDataGrid" 
+                  Grid.Row="0"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  IsReadOnly="True"
+                  Margin="10"
+                  
+                  Loaded="PaymentsDataGrid_Loaded">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID платежа" Binding="{Binding IdPayment}" Width="Auto"/>
+                        <DataGridTextColumn Header="Дата платежа" Binding="{Binding PaymentDate, StringFormat={}{0:dd.MM.yyyy HH:mm}}" Width="Auto"/>
+                        <DataGridTextColumn Header="Способ оплаты" Binding="{Binding PaymentMethod}" Width="*"/>
+                        <DataGridTextColumn Header="ID заказа" Binding="{Binding IdOrder}" Width="Auto"/>
+                        <DataGridTextColumn Header="Статус заказа" Binding="{Binding OrderStatus}" Width="Auto"/>
+                        <DataGridTextColumn Header="Сумма заказа" Binding="{Binding OrderTotalPrice, StringFormat={}{0:N2} руб.}" Width="Auto"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+               
+            </Grid>
+        </TabItem>
+
+
+    </TabControl>
+</Window>

@@ -1,0 +1,42 @@
+﻿<Page x:Class="EkatBooks.PageProfile_1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EkatBooks"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageProfile_1" Background="White">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock Text="Войти" FontFamily="Times New Roman" FontSize="25"  Margin="120 20 0 0"/>
+            <TextBox x:Name="inputTextBoxLogin" MinWidth="200"  MinHeight="25" Margin="0 20 0 0" Text="Логин"  Foreground="Gray" GotFocus="TextBox_GotFocusLogin" LostFocus="TextBox_LostFocusLogin" />
+
+            <TextBox x:Name="inputTextBoxPassword_3" MinWidth="200" MinHeight="25" Margin="0 10 0 0" Text="Пароль"  Foreground="Gray" GotFocus="TextBox_GotFocusPassword" LostFocus="TextBox_LostFocusPassword"  VerticalAlignment="Top" MaxLength="37" />
+
+
+
+
+            <!--<TextBox x:Name="inputTextBoxPasswordVisible_2" MinWidth="200" MinHeight="25" Margin="0 10 0 0" Foreground="Black" VerticalAlignment="Top" Visibility="Collapsed" MaxLength="37"  />-->
+
+
+            <Button Background="White" Margin="280 -25 3 0" MaxHeight="20" MaxWidth="30"  >
+                <Button.Content>
+                    <Image x:Name="eye" MaxHeight="30" MinWidth="30" >
+
+                    </Image>
+                </Button.Content>
+        
+            </Button>
+
+            <Button Content="Войти" Background="RoyalBlue" Foreground="White"  MinWidth="200"  MinHeight="25" Margin="0 10 0 0" Click="Button_ClickInputUserProfile"  />
+            <Button Content="Создать аккаунт" Background="White" Foreground="Black" BorderThickness="0.4"  MinWidth="200"  MinHeight="25" Margin="0 10 0 0" Click="PageCreateProfile" />
+            <Button Content="Забыли пароль?" BorderThickness="0" Background="White" Foreground="Black" MinWidth="200" MinHeight="25" Margin="0 10 0 0" Click="PageRecoveryPasswordReturn">
+              
+            </Button>
+
+        </StackPanel>
+        <!--<Frame x:Name="PageProfileFrame_1"  NavigationUIVisibility="Hidden" />-->
+    </Grid>
+</Page>

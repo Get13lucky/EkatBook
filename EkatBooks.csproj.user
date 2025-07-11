@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="BasketAndProfile\PageSuccessCreation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BasketAndProfile\PageUnSuccessCreation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BasketAndProfile\WindowManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BasketAndProfile\WindowOrder.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BasketAndProfile\WindowReview.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MainMenuPagesWindows\PageResultResearch.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PagesOfTrends\PageBestSeller.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PagesOfTrends\PageByChance.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PagesOfTrends\PageFilm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PagesOfTrends\PageNewsBooks.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PagesOfTrends\PageNobel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PagesOfTrends\PageRecommend.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PagesOfTrends\PageSoonBooks.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PagesOfTrends\PageTop.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="BasketAndProfile\PageBasket.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BasketAndProfile\PageCreateProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BasketAndProfile\PageProfile_1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BasketAndProfile\PageRecoveryPassword.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BasketAndProfile\PageSuccessCreation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BasketAndProfile\PageUnSuccessCreation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BasketAndProfile\WindowManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BasketAndProfile\WindowOrder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BasketAndProfile\WindowProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BasketAndProfile\WindowReview.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainMenuPagesWindows\PageResultResearch.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfCategories\BusinessLit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfCategories\PageArt.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfCategories\PageComputerCategory.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfCategories\PageLaw.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfCategories\PageMedical.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfCategories\PagePsycho.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfCategories\PagePubHis.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfCategories\PageScienceEdu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainMenuPagesWindows\NewsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainMenuPagesWindows\PublishingHouse.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainMenuPagesWindows\ReturnMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainMenuPagesWindows\RightsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainMenuPagesWindows\StoreWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfTrends\PageBestSeller.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfTrends\PageByChance.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfTrends\PageFilm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfTrends\PageNewsBooks.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfTrends\PageNobel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfTrends\PageRecommend.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfTrends\PageSoonBooks.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesOfTrends\PageTop.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
